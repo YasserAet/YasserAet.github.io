@@ -1,0 +1,337 @@
+{
+  "announcement": {
+    "badge": "Disponible pour de nouvelles opportunités",
+    "title": "Recherche Active de Stage PFE",
+    "details": "Disponible dès Février 2025 • 4-6 mois • Possibilité de recrutement",
+    "cta": "Me Contacter"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "experience": "Expérience",
+    "education": "Formation",
+    "certificates": "Certifications",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Yassir Aitali",
+    "title": "Développeur VR & Étudiant en Génie Informatique",
+    "subtitle": "Spécialiste du développement web full-stack et des technologies VR basé au Maroc",
+    "cta": "Voir Mon Travail",
+    "contact": "Me Contacter",
+    "downloadCV": "Télécharger CV"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "description": "Ingénieur Full Stack & Développeur VR motivé, doté de solides fondations en DevOps, Architecture Logicielle et développement Cloud-Native.",
+    "objective": "Je maîtrise le Cycle de Vie Complet du Développement Logiciel (SDLC), et me concentre sur le développement d'applications évolutives, l'implémentation de pipelines CI/CD automatisés et la conteneurisation. Mon expertise technique couvre un large éventail de langages, incluant Java, Python, et JavaScript, ainsi que des frameworks comme React, Spring Boot, et Node.js.\n\nDe plus, je possède une expérience spécialisée en développement VR/XR, tirant parti de compétences en Unity, WebGL, et Blender pour créer des environnements 3D immersifs et des applications web interactives, comme en témoignent mes réalisations sur les visites VR et les systèmes de suivi corporel.\n\nJe suis impatient de mettre à profit mes connaissances en IA/ML et Big Data pour fournir des solutions techniquement excellentes, axées sur l'utilisateur, et qui mettent l'accent sur la performance et une expérience utilisateur optimale.",
+    "yearsExperience": "Années d'Expérience",
+    "projectsCompleted": "Projets Complétés",
+    "technologies": "Technologies"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "present": "Présent",
+    "positions": [
+      {
+        "role": "Stagiaire – Développeur Full-Stack & VR & Designer 3D",
+        "company": "Almoftah Real Estate",
+        "period": "Septembre 2024",
+        "location": "Muscat, Oman",
+        "description": "Développement d'expériences VR immersives et d'applications web 3D pour la visualisation immobilière.",
+        "achievements": [
+          "Développement de visites VR pour la présentation de propriétés",
+          "Création de bâtiments 3D interactifs et visualisations architecturales",
+          "Construction d'applications web 3D pour une expérience client améliorée"
+        ]
+      },
+      {
+        "role": "Stagiaire – Développeur Full-Stack / Développeur de Jeux",
+        "company": "UM6P Vanguard Center",
+        "period": "Août 2023",
+        "location": "Benguerir, Maroc",
+        "description": "Spécialisé dans le développement Unity WebGL avec technologie de suivi corporel en temps réel.",
+        "achievements": [
+          "Développement d'application Unity WebGL de suivi corporel",
+          "Implémentation du streaming WebSocket pour transfert de données en temps réel",
+          "Optimisation de la précision du suivi et des performances"
+        ]
+      },
+      {
+        "role": "Développeur Full-Stack",
+        "company": "SEOCOM",
+        "period": "Août 2021",
+        "location": "Marrakech, Maroc",
+        "description": "Développement web full-stack avec focus sur l'assurance qualité et l'optimisation.",
+        "achievements": [
+          "Développement d'applications web full-stack",
+          "Tests et débogage complets",
+          "Optimisation du code et amélioration des performances"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projets",
+    "viewProject": "Voir le Projet",
+    "viewCode": "Voir le Code",
+    "items": [
+      {
+        "title": "KEY ONE – Plateforme VR Immobilière",
+        "description": "Plateforme complète de visualisation immobilière avec visites VR immersives, exploration 3D interactive des bâtiments et cartographie des emplacements. Développée avec Next.js et Three.js pour des expériences VR web fluides, présentant des appartements avec panoramas 360°, plans d'étage et intégration des points d'intérêt.",
+        "tech": ["TypeScript", "Next.js", "Three.js", "React", "WebGL", "Modélisation 3D", "Tailwind CSS"],
+        "features": ["Visualiseur 3D interactif", "Visites VR 360°", "Cartographie temps réel", "Visualisation plans d'étage", "Outil comparaison propriétés", "Design responsive"],
+        "github": "https://github.com/YasserAet/KEY1-V2",
+        "demo": "",
+        "year": "2024",
+        "featured": true
+      },
+      {
+        "title": "Système de Suivi Corporel WebGL",
+        "description": "Application de suivi corporel temps réel développée avec Unity et déployée en WebGL. Détection de pose avancée, intégration WebSocket pour streaming de données en direct, et performances optimisées pour navigateurs web. Développée durant le stage au Centre Vanguard UM6P pour applications fitness interactives et capture de mouvement.",
+        "tech": ["Unity", "WebGL", "C#", "WebSocket", "Détection Pose", "Traitement Temps Réel"],
+        "features": ["Suivi pose corporelle temps réel", "Streaming WebSocket", "Déploiement navigateur", "Optimisation haute performance", "Précision capture mouvement", "Compatibilité cross-platform"],
+        "github": "https://github.com/YasserAet/Webgl_Body_Tracking",
+        "demo": "",
+        "year": "2023",
+        "featured": true
+      },
+      {
+        "title": "OPTIPARK – Système de Parking Intelligent",
+        "description": "Système intelligent de gestion de parking utilisant vision par ordinateur et OpenCV pour détection temps réel des places de parking. Surveillance automatisée des places, suivi d'occupation et intégration WebSocket pour mises à jour en direct. Développé avec Python pour traitement vidéo efficace et optimisation du parking.",
+        "tech": ["Python", "OpenCV", "Vision Ordinateur", "WebSocket", "Traitement Image", "Détection Temps Réel"],
+        "features": ["Détection automatique places", "Suivi occupation temps réel", "Traitement flux vidéo", "Mises à jour WebSocket", "Analytique parking", "Gestion efficace espaces"],
+        "github": "https://github.com/YasserAet/OPTIPARK",
+        "demo": "",
+        "year": "2024",
+        "featured": true
+      },
+      {
+        "title": "Système de Gestion Hôtelière (C#)",
+        "description": "Application desktop de gestion hôtelière développée avec C# et .NET, incluant gestion complète des réservations, enregistrement des clients, allocation des chambres et systèmes de facturation. Conçue pour opérations hôtelières efficaces avec interface utilisateur intuitive.",
+        "tech": ["C#", ".NET", "Windows Forms", "SQL Server", "App Desktop"],
+        "features": ["Gestion des clients", "Système de réservation", "Facturation et facturation", "Suivi des réservations", "Tableau de bord admin"],
+        "github": "https://github.com/YasserAet/HOTEL-MANAGEMENT-APP-2",
+        "demo": "",
+        "year": "2022"
+      },
+      {
+        "title": "HMS – Gestion Hôtelière (Qt/C++)",
+        "description": "Système de gestion hôtelière cross-platform développé avec Qt et C++. Gestion avancée des chambres, services clients, opérations de facturation et fonctionnalité de reporting. Inclut intégration base de données complète et design UI moderne.",
+        "tech": ["C++", "Qt", "QMake", "SQLite", "Cross-platform"],
+        "features": ["Gestion des chambres", "Services clients", "Système de facturation", "Génération rapports", "Intégration base données", "UI Qt moderne"],
+        "github": "https://github.com/YasserAet/HMS",
+        "demo": "",
+        "year": "2022"
+      },
+      {
+        "title": "Gestion Salles – Système Réservation Salles",
+        "description": "Système web de gestion de réservation de salles et installations développé avec le framework Laravel. Authentification utilisateur, calendrier de réservation, suivi de disponibilité et contrôles administratifs pour gérer plusieurs salles et horaires.",
+        "tech": ["PHP", "Laravel", "JavaScript", "Blade", "MySQL", "Tailwind CSS"],
+        "features": ["Système réservation salles", "Authentification utilisateur", "Calendrier disponibilité", "Tableau de bord admin", "Gestion réservations", "Design responsive"],
+        "github": "https://github.com/YasserAet/Gestion_salles",
+        "demo": "",
+        "year": "2023"
+      }
+    ]
+  },
+  "education": {
+    "title": "Formation",
+    "degrees": [
+      {
+        "degree": "Cycle d'Ingénieur – MIAGE",
+        "institution": "École Marocaine des Sciences de l'Ingénieur",
+        "period": "Octobre 2023 – Présent",
+        "location": "Marrakech, Maroc",
+        "specialization": "DevOps, IA, Big Data, Architecture Logicielle, Cloud Computing",
+        "description": "Poursuite d'un diplôme d'ingénieur avancé avec focus sur les architectures logicielles modernes et les technologies IA."
+      },
+      {
+        "degree": "Diplôme Développeur VR",
+        "institution": "IDC & VR Innovation Academy, UM6P",
+        "period": "Mai 2023",
+        "location": "Benguerir / Marrakech, Maroc",
+        "specialization": "VR/AR, Environnements 3D Immersifs, Modélisation 3D, Animation 3D, Unity, Blender, WebGL, Industrie 4.0",
+        "description": "Formation spécialisée en développement de réalité virtuelle et technologies immersives."
+      },
+      {
+        "degree": "Diplôme Professionnel : BTS",
+        "institution": "BTS Multimédia et Design Web — Mohammed VI",
+        "period": "Juillet 2022",
+        "location": "Marrakech, Maroc",
+        "specialization": "Développement Web, Design Multimédia, UX/UI, Contenu Interactif",
+        "description": "Diplôme technique en design multimédia et développement web."
+      },
+      {
+        "degree": "Baccalauréat",
+        "institution": "Lycée Mohammed VI",
+        "period": "Juillet 2020",
+        "location": "Marrakech, Maroc",
+        "specialization": "Sciences et Technologies Électriques",
+        "description": "Diplôme d'études secondaires avec spécialisation en sciences électriques."
+      }
+    ]
+  },
+  "certificates": {
+    "title": "Certifications",
+    "subtitle": "Certifications professionnelles et cours complétés",
+    "featured": "Certifications en Vedette",
+    "all": "Toutes les Certifications",
+    "viewAll": "Voir Toutes les Certifications",
+    "items": [
+      {
+        "title": "Programme Certifié Développeur XR Avancé",
+        "issuer": "VR Innovation Academy / IDC Morocco",
+        "date": "Juillet 2023",
+        "credentialId": "473-VRIA-EON-XR-2023",
+        "link": "",
+        "featured": true,
+        "image": "/Yasser Aitali - IDC CERTIFICATE_page-0001.jpg"
+      },
+      {
+        "title": "Microservices Avancés Spring Cloud & Déploiement avec Docker",
+        "issuer": "Packt",
+        "date": "Nov 2025",
+        "credentialId": "XHTS8D3AGOCY",
+        "link": "",
+        "featured": true,
+        "image": "/Advanced Spring Cloud Microservices & Deployment with Docker_page-0001.jpg"
+      },
+      {
+        "title": "Introduction à l'Apprentissage Automatique",
+        "issuer": "Duke University",
+        "date": "Nov 2025",
+        "credentialId": "ZCNXM4UPCX0Q",
+        "link": "https://www.coursera.org/account/accomplishments/records/ZCNXM4UPCX0Q"
+      },
+      {
+        "title": "Introduction aux Conteneurs avec Docker, Kubernetes & OpenShift",
+        "issuer": "IBM",
+        "date": "Mar 2025",
+        "credentialId": "8NP8UQP1HAY2",
+        "link": "https://www.coursera.org/account/accomplishments/verify/8NP8UQP1HAY2"
+      },
+      {
+        "title": "Réseaux Virtuels dans Azure",
+        "issuer": "Whizlabs",
+        "date": "Mar 2025",
+        "credentialId": "H8NV555OKVMT",
+        "link": "https://www.coursera.org/account/accomplishments/records/H8NV555OKVMT"
+      },
+      {
+        "title": "Introduction à Java et Programmation Orientée Objet",
+        "issuer": "University of Pennsylvania",
+        "date": "Déc 2024",
+        "credentialId": "WQEVJD069EWB",
+        "link": "https://www.coursera.org/account/accomplishments/records/WQEVJD069EWB"
+      },
+      {
+        "title": "Les Bases de React",
+        "issuer": "Meta",
+        "date": "Déc 2024",
+        "credentialId": "FCA4UBUDSNOV",
+        "link": "https://www.coursera.org/account/accomplishments/records/FCA4UBUDSNOV"
+      },
+      {
+        "title": "Génie Logiciel : Conception et Gestion de Projet",
+        "issuer": "The Hong Kong University of Science and Technology",
+        "date": "Mai 2024",
+        "credentialId": "B76TWEV7DJZD",
+        "link": "https://www.coursera.org/account/accomplishments/records/B76TWEV7DJZD"
+      },
+      {
+        "title": "L'Atelier Unix",
+        "issuer": "Johns Hopkins University",
+        "date": "Avr 2024",
+        "credentialId": "FKYV2U84MFLE",
+        "link": "https://www.coursera.org/account/accomplishments/records/FKYV2U84MFLE"
+      },
+      {
+        "title": "Introduction à la programmation orientée objet (en C++)",
+        "issuer": "École Polytechnique Fédérale de Lausanne",
+        "date": "Déc 2023",
+        "credentialId": "2VHSXHT4XVCV",
+        "link": "https://www.coursera.org/account/accomplishments/records/2VHSXHT4XVCV"
+      },
+      {
+        "title": "Web Design pour Tous - Projet Final",
+        "issuer": "University of Michigan",
+        "date": "Déc 2023",
+        "credentialId": "Q3YJ5ZEYWJGV",
+        "link": "https://www.coursera.org/account/accomplishments/records/Q3YJ5ZEYWJGV"
+      },
+      {
+        "title": "Stylisme Avancé avec Design Responsive",
+        "issuer": "University of Michigan",
+        "date": "Nov 2023",
+        "credentialId": "SCHKFPG5HRXT",
+        "link": "https://www.coursera.org/account/accomplishments/records/SCHKFPG5HRXT"
+      },
+      {
+        "title": "Interactivité avec JavaScript",
+        "issuer": "University of Michigan",
+        "date": "Nov 2023",
+        "credentialId": "ETNKQES55Z89",
+        "link": "https://www.coursera.org/account/accomplishments/records/ETNKQES55Z89"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Compétences & Expertise",
+    "categories": {
+      "programming": {
+        "title": "Langages de Programmation",
+        "items": ["JavaScript", "TypeScript", "Python", "C#", "HTML5", "CSS3", "SQL"]
+      },
+      "frontend": {
+        "title": "Développement Frontend",
+        "items": ["React", "Next.js", "Vue.js", "Tailwind CSS", "GSAP", "Three.js", "Redux"]
+      },
+      "backend": {
+        "title": "Développement Backend",
+        "items": ["Node.js", "Express", "FastAPI", "Django", "REST APIs", "Microservices", "GraphQL"]
+      },
+      "xr": {
+        "title": "Technologies 3D/XR",
+        "items": ["Unity", "Unreal Engine", "Blender", "Modélisation 3D", "Développement VR", "Développement AR"]
+      },
+      "database": {
+        "title": "Bases de Données & Outils",
+        "items": ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis", "Docker"]
+      },
+      "tools": {
+        "title": "Outils & Plateformes",
+        "items": ["Git", "GitHub", "VS Code", "Figma", "Postman", "Linux", "CI/CD"]
+      }
+    }
+  },
+  "contact": {
+    "title": "Contactez-Moi",
+    "subtitle": "Je suis toujours intéressé par de nouvelles opportunités et collaborations.",
+    "form": {
+      "name": "Votre Nom",
+      "email": "Votre Email",
+      "message": "Votre Message",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Échec de l'envoi du message. Veuillez réessayer."
+    },
+    "info": {
+      "email": "yasseraitali@outlook.fr",
+      "phone": "+212 6 09 08 41 05",
+      "location": "Marrakech, Maroc"
+    },
+    "social": {
+      "github": "https://github.com/YasserAet",
+      "linkedin": "https://www.linkedin.com/in/aitali-yassir/",
+      "instagram": "https://www.instagram.com/_freaktreatv1.0/"
+    }
+  },
+  "footer": {
+    "rights": "Tous droits réservés."
+  }
+}

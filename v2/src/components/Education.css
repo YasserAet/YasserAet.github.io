@@ -1,0 +1,213 @@
+.education-section {
+    padding: 6rem 0;
+    background: var(--color-bg-primary);
+    position: relative;
+}
+
+.education-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.3), transparent);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.education-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.education-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.education-item:last-child .timeline-line {
+    display: none;
+}
+
+.timeline-marker {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+    position: relative;
+    z-index: 2;
+}
+
+.education-item.current .timeline-dot {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(99, 102, 241, 0.8), 0 0 0 8px rgba(99, 102, 241, 0.2);
+    }
+}
+
+.timeline-line {
+    width: 2px;
+    flex-grow: 1;
+    background: linear-gradient(180deg, rgba(99, 102, 241, 0.5), rgba(99, 102, 241, 0.1));
+    margin-top: 0.5rem;
+}
+
+.education-card {
+    flex: 1;
+    background: var(--color-bg-secondary);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.education-card:hover {
+    border-color: rgba(99, 102, 241, 0.5);
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+}
+
+.current-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.375rem 0.875rem;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.education-header {
+    margin-bottom: 1rem;
+}
+
+.education-degree {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.education-institution {
+    font-size: 1.125rem;
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+.education-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+.meta-item svg {
+    color: #3b82f6;
+}
+
+.education-specialization {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(99, 102, 241, 0.05);
+    border-left: 3px solid var(--color-accent-primary);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.education-specialization strong {
+    color: var(--color-text-primary);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.education-specialization span {
+    color: var(--color-text-secondary);
+}
+
+.education-description {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    font-size: 0.9375rem;
+}
+
+@media (max-width: 768px) {
+    .education-section {
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .education-item {
+        gap: 1rem;
+    }
+
+    .timeline-dot {
+        width: 40px;
+        height: 40px;
+    }
+
+    .education-card {
+        padding: 1.5rem;
+    }
+
+    .education-degree {
+        font-size: 1.25rem;
+    }
+
+    .education-institution {
+        font-size: 1rem;
+    }
+}

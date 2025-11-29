@@ -1,0 +1,337 @@
+{
+  "announcement": {
+    "badge": "Open to Opportunities",
+    "title": "Actively Seeking PFE Internship",
+    "details": "Available from February 2025 • 4-6 months • Open to full-time conversion",
+    "cta": "Get in Touch"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "certificates": "Certificates",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Yassir Aitali",
+    "title": "VR Developer & Computer Science Engineering Student",
+    "subtitle": "Full-stack web development and VR technologies specialist based in Morocco",
+    "cta": "View My Work",
+    "contact": "Get in Touch",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Motivated Full Stack Engineer & VR Developer with a solid foundation in DevOps, Software Architecture, and Cloud development.",
+    "objective": "I am proficient in the complete Software Development Life Cycle (SDLC), focusing on developing scalable applications and implementing automated CI/CD pipelines and containerization. My technical expertise spans a wide range of languages including Java, Python, and JavaScript, and frameworks such as React, Spring Boot, and Node.js.\n\nFurthermore, I have specialized experience in VR/XR development, leveraging skills in Unity, WebGL, and Blender to create immersive 3D environments and interactive web applications, as demonstrated by my work on VR tours and body tracking systems.\n\nI am eager to apply my knowledge in AI/ML and Big Data to deliver technically excellent, user-focused solutions that emphasize performance and an optimal user experience.",
+    "yearsExperience": "Years Experience",
+    "projectsCompleted": "Projects Completed",
+    "technologies": "Technologies"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "present": "Present",
+    "positions": [
+      {
+        "role": "Intern – Full-Stack & VR Developer & 3D Designer",
+        "company": "Almoftah Real Estate",
+        "period": "September 2024",
+        "location": "Muscat, Oman",
+        "description": "Development of immersive VR experiences and 3D web applications for real estate visualization.",
+        "achievements": [
+          "Developed VR tours for property showcasing",
+          "Created interactive 3D buildings and architectural visualizations",
+          "Built 3D web applications for enhanced client experience"
+        ]
+      },
+      {
+        "role": "Intern – Full-Stack Developer / Game Developer",
+        "company": "UM6P Vanguard Center",
+        "period": "August 2023",
+        "location": "Benguerir, Morocco",
+        "description": "Specialized in Unity WebGL development with real-time body tracking technology.",
+        "achievements": [
+          "Developed Unity WebGL body tracking application",
+          "Implemented WebSocket streaming for real-time data transfer",
+          "Optimized tracking accuracy and performance"
+        ]
+      },
+      {
+        "role": "Full-Stack Developer",
+        "company": "SEOCOM",
+        "period": "August 2021",
+        "location": "Marrakech, Morocco",
+        "description": "Full-stack web development with focus on quality assurance and optimization.",
+        "achievements": [
+          "Full-stack web application development",
+          "Comprehensive testing and debugging",
+          "Code optimization and performance improvements"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "items": [
+      {
+        "title": "KEY ONE – Real Estate VR Platform",
+        "description": "Comprehensive real estate visualization platform featuring immersive VR property tours, interactive 3D building exploration, and location mapping. Built with Next.js and Three.js for seamless web-based VR experiences, showcasing apartments with 360° panoramas, floor plans, and nearby landmarks integration.",
+        "tech": ["TypeScript", "Next.js", "Three.js", "React", "WebGL", "3D Modeling", "Tailwind CSS"],
+        "features": ["Interactive 3D building viewer", "360° VR property tours", "Real-time location mapping", "Floor plan visualization", "Property comparison tool", "Responsive design"],
+        "github": "https://github.com/YasserAet/KEY1-V2",
+        "demo": "",
+        "year": "2024",
+        "featured": true
+      },
+      {
+        "title": "WebGL Body Tracking System",
+        "description": "Real-time body tracking application developed with Unity and deployed as WebGL. Features advanced pose detection, WebSocket integration for live data streaming, and optimized performance for web browsers. Built during internship at UM6P Vanguard Center for interactive fitness and motion capture applications.",
+        "tech": ["Unity", "WebGL", "C#", "WebSocket", "Pose Detection", "Real-time Processing"],
+        "features": ["Real-time body pose tracking", "WebSocket streaming", "Browser-based deployment", "High-performance optimization", "Motion capture accuracy", "Cross-platform compatibility"],
+        "github": "https://github.com/YasserAet/Webgl_Body_Tracking",
+        "demo": "",
+        "year": "2023",
+        "featured": true
+      },
+      {
+        "title": "OPTIPARK – Smart Parking System",
+        "description": "Intelligent parking management system using computer vision and OpenCV for real-time parking space detection. Features automated space monitoring, occupancy tracking, and WebSocket integration for live updates. Developed with Python for efficient video processing and parking optimization.",
+        "tech": ["Python", "OpenCV", "Computer Vision", "WebSocket", "Image Processing", "Real-time Detection"],
+        "features": ["Automated space detection", "Real-time occupancy tracking", "Video stream processing", "WebSocket live updates", "Parking analytics", "Efficient space management"],
+        "github": "https://github.com/YasserAet/OPTIPARK",
+        "demo": "",
+        "year": "2024",
+        "featured": true
+      },
+      {
+        "title": "Hotel Management System (C#)",
+        "description": "Desktop hotel management application built with C# and .NET, featuring comprehensive booking management, guest registration, room allocation, and billing systems. Designed for efficient hotel operations with intuitive user interface.",
+        "tech": ["C#", ".NET", "Windows Forms", "SQL Server", "Desktop App"],
+        "features": ["Guest management", "Room booking system", "Billing and invoicing", "Reservation tracking", "Admin dashboard"],
+        "github": "https://github.com/YasserAet/HOTEL-MANAGEMENT-APP-2",
+        "demo": "",
+        "year": "2022"
+      },
+      {
+        "title": "HMS – Hotel Management (Qt/C++)",
+        "description": "Cross-platform hotel management system developed with Qt and C++. Features advanced room management, guest services, billing operations, and reporting functionality. Includes comprehensive database integration and modern UI design.",
+        "tech": ["C++", "Qt", "QMake", "SQLite", "Cross-platform"],
+        "features": ["Room management", "Guest services", "Billing system", "Report generation", "Database integration", "Modern Qt UI"],
+        "github": "https://github.com/YasserAet/HMS",
+        "demo": "",
+        "year": "2022"
+      },
+      {
+        "title": "Gestion Salles – Room Booking System",
+        "description": "Web-based room and facility booking management system built with Laravel framework. Features user authentication, booking calendar, availability tracking, and administrative controls for managing multiple rooms and schedules.",
+        "tech": ["PHP", "Laravel", "JavaScript", "Blade", "MySQL", "Tailwind CSS"],
+        "features": ["Room booking system", "User authentication", "Availability calendar", "Admin dashboard", "Booking management", "Responsive design"],
+        "github": "https://github.com/YasserAet/Gestion_salles",
+        "demo": "",
+        "year": "2023"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "degrees": [
+      {
+        "degree": "Engineering Cycle – MIAGE",
+        "institution": "Moroccan School of Engineering Sciences",
+        "period": "October 2023 – Present",
+        "location": "Marrakech, Morocco",
+        "specialization": "DevOps, AI, Big Data, Software Architecture, Cloud Computing",
+        "description": "Pursuing advanced engineering degree with focus on modern software architectures and AI technologies."
+      },
+      {
+        "degree": "VR Developer Diploma",
+        "institution": "IDC & VR Innovation Academy, UM6P",
+        "period": "May 2023",
+        "location": "Benguerir / Marrakech, Morocco",
+        "specialization": "VR/AR, Immersive 3D Environments, 3D Modeling, 3D Animation, Unity, Blender, WebGL, Industry 4.0",
+        "description": "Specialized training in virtual reality development and immersive technologies."
+      },
+      {
+        "degree": "Professional Degree: BTS",
+        "institution": "BTS Multimedia and Web Design — Mohammed VI",
+        "period": "July 2022",
+        "location": "Marrakech, Morocco",
+        "specialization": "Web Development, Multimedia Design, UX/UI, Interactive Content",
+        "description": "Technical degree in multimedia design and web development."
+      },
+      {
+        "degree": "Baccalaureate",
+        "institution": "Mohammed VI High School",
+        "period": "July 2020",
+        "location": "Marrakech, Morocco",
+        "specialization": "Electrical Science and Technology",
+        "description": "High school diploma with focus on electrical sciences."
+      }
+    ]
+  },
+  "certificates": {
+    "title": "Certifications",
+    "subtitle": "Professional certifications and completed courses",
+    "featured": "Featured Certifications",
+    "all": "All Certifications",
+    "viewAll": "View All Certificates",
+    "items": [
+      {
+        "title": "Certified Advanced XR Developer Program",
+        "issuer": "VR Innovation Academy / IDC Morocco",
+        "date": "July 2023",
+        "credentialId": "473-VRIA-EON-XR-2023",
+        "link": "",
+        "featured": true,
+        "image": "/Yasser Aitali - IDC CERTIFICATE_page-0001.jpg"
+      },
+      {
+        "title": "Advanced Spring Cloud Microservices & Deployment with Docker",
+        "issuer": "Packt",
+        "date": "Nov 2025",
+        "credentialId": "XHTS8D3AGOCY",
+        "link": "",
+        "featured": true,
+        "image": "/Advanced Spring Cloud Microservices & Deployment with Docker_page-0001.jpg"
+      },
+      {
+        "title": "Introduction to Machine Learning",
+        "issuer": "Duke University",
+        "date": "Nov 2025",
+        "credentialId": "ZCNXM4UPCX0Q",
+        "link": "https://www.coursera.org/account/accomplishments/records/ZCNXM4UPCX0Q"
+      },
+      {
+        "title": "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+        "issuer": "IBM",
+        "date": "Mar 2025",
+        "credentialId": "8NP8UQP1HAY2",
+        "link": "https://www.coursera.org/account/accomplishments/verify/8NP8UQP1HAY2"
+      },
+      {
+        "title": "Virtual Networks in Azure",
+        "issuer": "Whizlabs",
+        "date": "Mar 2025",
+        "credentialId": "H8NV555OKVMT",
+        "link": "https://www.coursera.org/account/accomplishments/records/H8NV555OKVMT"
+      },
+      {
+        "title": "Introduction to Java and Object-Oriented Programming",
+        "issuer": "University of Pennsylvania",
+        "date": "Dec 2024",
+        "credentialId": "WQEVJD069EWB",
+        "link": "https://www.coursera.org/account/accomplishments/records/WQEVJD069EWB"
+      },
+      {
+        "title": "React Basics",
+        "issuer": "Meta",
+        "date": "Dec 2024",
+        "credentialId": "FCA4UBUDSNOV",
+        "link": "https://www.coursera.org/account/accomplishments/records/FCA4UBUDSNOV"
+      },
+      {
+        "title": "Software Engineering: Software Design and Project Management",
+        "issuer": "The Hong Kong University of Science and Technology",
+        "date": "May 2024",
+        "credentialId": "B76TWEV7DJZD",
+        "link": "https://www.coursera.org/account/accomplishments/records/B76TWEV7DJZD"
+      },
+      {
+        "title": "The Unix Workbench",
+        "issuer": "Johns Hopkins University",
+        "date": "Apr 2024",
+        "credentialId": "FKYV2U84MFLE",
+        "link": "https://www.coursera.org/account/accomplishments/records/FKYV2U84MFLE"
+      },
+      {
+        "title": "Introduction à la programmation orientée objet (en C++)",
+        "issuer": "École Polytechnique Fédérale de Lausanne",
+        "date": "Dec 2023",
+        "credentialId": "2VHSXHT4XVCV",
+        "link": "https://www.coursera.org/account/accomplishments/records/2VHSXHT4XVCV"
+      },
+      {
+        "title": "Web Design for Everybody Capstone",
+        "issuer": "University of Michigan",
+        "date": "Dec 2023",
+        "credentialId": "Q3YJ5ZEYWJGV",
+        "link": "https://www.coursera.org/account/accomplishments/records/Q3YJ5ZEYWJGV"
+      },
+      {
+        "title": "Advanced Styling with Responsive Design",
+        "issuer": "University of Michigan",
+        "date": "Nov 2023",
+        "credentialId": "SCHKFPG5HRXT",
+        "link": "https://www.coursera.org/account/accomplishments/records/SCHKFPG5HRXT"
+      },
+      {
+        "title": "Interactivity with JavaScript",
+        "issuer": "University of Michigan",
+        "date": "Nov 2023",
+        "credentialId": "ETNKQES55Z89",
+        "link": "https://www.coursera.org/account/accomplishments/records/ETNKQES55Z89"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "categories": {
+      "programming": {
+        "title": "Programming Languages",
+        "items": ["JavaScript", "TypeScript", "Python", "C#", "HTML5", "CSS3", "SQL"]
+      },
+      "frontend": {
+        "title": "Frontend Development",
+        "items": ["React", "Next.js", "Vue.js", "Tailwind CSS", "GSAP", "Three.js", "Redux"]
+      },
+      "backend": {
+        "title": "Backend Development",
+        "items": ["Node.js", "Express", "FastAPI", "Django", "REST APIs", "Microservices", "GraphQL"]
+      },
+      "xr": {
+        "title": "3D/XR Technologies",
+        "items": ["Unity", "Unreal Engine", "Blender", "3D Modeling", "VR Development", "AR Development"]
+      },
+      "database": {
+        "title": "Databases & Tools",
+        "items": ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis", "Docker"]
+      },
+      "tools": {
+        "title": "Tools & Platforms",
+        "items": ["Git", "GitHub", "VS Code", "Figma", "Postman", "Linux", "CI/CD"]
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "I'm always interested in hearing about new opportunities and collaborations.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "email": "yasseraitali@outlook.fr",
+      "phone": "Contact via email",
+      "location": "Marrakech, Morocco"
+    },
+    "social": {
+      "github": "https://github.com/YasserAet",
+      "linkedin": "https://www.linkedin.com/in/aitali-yassir/",
+      "instagram": "https://www.instagram.com/_freaktreatv1.0/"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
