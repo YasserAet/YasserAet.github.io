@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { Heart } from 'lucide-react';
 
 const Footer = () => {
   const { t } = useTranslation();

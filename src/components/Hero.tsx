@@ -5,7 +5,7 @@ import { ChevronDown, Sparkles, X, Download } from 'lucide-react';
 import gsap from 'gsap';
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const heroRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const [isAnnouncementVisible, setIsAnnouncementVisible] = useState(true);
