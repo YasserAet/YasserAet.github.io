@@ -37,39 +37,42 @@
     "present": "Présent",
     "positions": [
       {
-        "role": "Stagiaire – Développeur Full-Stack & VR & Designer 3D",
+        "role": "Stagiaire – Développeur Full-Stack & VR / Concepteur 3D",
         "company": "Almoftah Real Estate",
         "period": "Septembre 2024",
-        "location": "Muscat, Oman",
-        "description": "Développement d'expériences VR immersives et d'applications web 3D pour la visualisation immobilière.",
+        "location": "Oman, Muscat",
+        "description": "Développement de visites VR immersives via Unity (C#) et déploiement en WebGL avec optimisation du pipeline de build.",
         "achievements": [
-          "Développement de visites VR pour la présentation de propriétés",
-          "Création de bâtiments 3D interactifs et visualisations architecturales",
-          "Construction d'applications web 3D pour une expérience client améliorée"
+          "Développement de visites VR immersives via Unity (C#) et déploiement en WebGL avec optimisation du pipeline de build (Cloud Storage, compression, caching)",
+          "Modélisation et intégration d'environnements 3D avec Blender / Maya, optimisation GPU et organisation architecturale du projet (Architecture logicielle modulaire)",
+          "Intégration d'expériences web 3D via Three.js, JavaScript/TypeScript, avec gestion des assets via un pipeline DevOps (GitHub, CI/CD simple)",
+          "Mise en place d'un système de chargement dynamique (lazy loading, structuration scalable) reflétant des pratiques de conception logicielle modernes"
         ]
       },
       {
-        "role": "Stagiaire – Développeur Full-Stack / Développeur de Jeux",
+        "role": "Stagiaire – Développeur Full-Stack / Développeur Jeux Vidéo",
         "company": "UM6P Vanguard Center",
         "period": "Août 2023",
-        "location": "Benguerir, Maroc",
-        "description": "Spécialisé dans le développement Unity WebGL avec technologie de suivi corporel en temps réel.",
+        "location": "Benguerir",
+        "description": "Développement d'une application de suivi corporel en temps réel basée sur MediaPipe (IA/ML), pipeline Python → Node.js (WebSocket) → Unity WebGL.",
         "achievements": [
-          "Développement d'application Unity WebGL de suivi corporel",
-          "Implémentation du streaming WebSocket pour transfert de données en temps réel",
-          "Optimisation de la précision du suivi et des performances"
+          "Développement d'une application de suivi corporel en temps réel basée sur MediaPipe (IA/ML), pipeline Python → Node.js (WebSocket) → Unity WebGL",
+          "Exploitation de données de tracking en streaming continu (Big Data léger, traitement en temps réel), normalisation, filtrage et optimisation",
+          "Conception d'une architecture modulaire pour le pipeline (pattern Event-driven, separation of concerns) améliorant la stabilité et la maintenabilité",
+          "Optimisation du rendu en Unity (C#) pour WebGL et intégration dans un environnement Cloud UM6P pour les tests et déploiements internes"
         ]
       },
       {
         "role": "Développeur Full-Stack",
         "company": "SEOCOM",
         "period": "Août 2021",
-        "location": "Marrakech, Maroc",
-        "description": "Développement web full-stack avec focus sur l'assurance qualité et l'optimisation.",
+        "location": "Marrakech",
+        "description": "Développement full-stack de solutions web avec PHP, JS, MySQL, conception d'API REST structurées selon les principes d'architecture logicielle (MVC).",
         "achievements": [
-          "Développement d'applications web full-stack",
-          "Tests et débogage complets",
-          "Optimisation du code et amélioration des performances"
+          "Développement full-stack de solutions web avec PHP, JS, MySQL, conception d'API REST structurées selon les principes d'architecture logicielle (MVC)",
+          "Optimisation des performances backend et gestion des données (requêtes SQL complexes, mini-pipelines de traitement proches de principes Big Data)",
+          "Mise en place de workflows DevOps : Git, branches structurées, déploiement sur serveurs Linux, automatisation basique des mises à jour",
+          "Monitoring applicatif et amélioration de la fiabilité via logs avancés et optimisation de charge"
         ]
       }
     ]

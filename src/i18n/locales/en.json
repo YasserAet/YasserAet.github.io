@@ -37,39 +37,42 @@
     "present": "Present",
     "positions": [
       {
-        "role": "Intern – Full-Stack & VR Developer & 3D Designer",
+        "role": "Intern – Full-Stack & VR Developer / 3D Designer",
         "company": "Almoftah Real Estate",
         "period": "September 2024",
-        "location": "Muscat, Oman",
-        "description": "Development of immersive VR experiences and 3D web applications for real estate visualization.",
+        "location": "Oman, Muscat",
+        "description": "Development of immersive VR tours via Unity (C#) and WebGL deployment with build pipeline optimization.",
         "achievements": [
-          "Developed VR tours for property showcasing",
-          "Created interactive 3D buildings and architectural visualizations",
-          "Built 3D web applications for enhanced client experience"
+          "Development of immersive VR tours via Unity (C#) and WebGL deployment with build pipeline optimization (Cloud Storage, compression, caching)",
+          "3D environment modeling and integration with Blender / Maya, GPU optimization and project architectural organization (Modular software architecture)",
+          "Integration of 3D web experiences via Three.js, JavaScript/TypeScript, with asset management through a DevOps pipeline (GitHub, simple CI/CD)",
+          "Implementation of dynamic loading system (lazy loading, scalable structuring) reflecting modern software design practices"
         ]
       },
       {
-        "role": "Intern – Full-Stack Developer / Game Developer",
+        "role": "Intern – Full-Stack Developer / Video Game Developer",
         "company": "UM6P Vanguard Center",
         "period": "August 2023",
-        "location": "Benguerir, Morocco",
-        "description": "Specialized in Unity WebGL development with real-time body tracking technology.",
+        "location": "Benguerir",
+        "description": "Development of a real-time body tracking application based on MediaPipe (AI/ML), Python → Node.js (WebSocket) → Unity WebGL pipeline.",
         "achievements": [
-          "Developed Unity WebGL body tracking application",
-          "Implemented WebSocket streaming for real-time data transfer",
-          "Optimized tracking accuracy and performance"
+          "Development of a real-time body tracking application based on MediaPipe (AI/ML), Python → Node.js (WebSocket) → Unity WebGL pipeline",
+          "Exploitation of tracking data in continuous streaming (light Big Data, real-time processing), normalization, filtering and optimization",
+          "Design of a modular architecture for the pipeline (Event-driven pattern, separation of concerns) improving stability and maintainability",
+          "Optimization of Unity (C#) rendering for WebGL and integration in UM6P Cloud environment for internal testing and deployments"
         ]
       },
       {
         "role": "Full-Stack Developer",
         "company": "SEOCOM",
         "period": "August 2021",
-        "location": "Marrakech, Morocco",
-        "description": "Full-stack web development with focus on quality assurance and optimization.",
+        "location": "Marrakech",
+        "description": "Full-stack development of web solutions with PHP, JS, MySQL, REST API design structured according to software architecture principles (MVC).",
         "achievements": [
-          "Full-stack web application development",
-          "Comprehensive testing and debugging",
-          "Code optimization and performance improvements"
+          "Full-stack development of web solutions with PHP, JS, MySQL, REST API design structured according to software architecture principles (MVC)",
+          "Backend performance optimization and data management (complex SQL queries, mini-processing pipelines close to Big Data principles)",
+          "Implementation of DevOps workflows: Git, structured branches, deployment on Linux servers, basic automation of updates",
+          "Application monitoring and reliability improvement via advanced logs and load optimization"
         ]
       }
     ]
