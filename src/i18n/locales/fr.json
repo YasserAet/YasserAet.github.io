@@ -1,9 +1,6 @@
 {
   "announcement": {
-    "badge": "Disponible pour de nouvelles opportunités",
-    "title": "Recherche Active de Stage PFE",
-    "details": "Disponible dès Février 2025 • 4-6 mois • Possibilité de recrutement",
-    "cta": "Me Contacter"
+    "text": "Développement de systèmes concrets autour de l'IA, du web, des données temps réel et des interfaces 3D immersives."
   },
   "nav": {
     "home": "Accueil",
@@ -18,138 +15,257 @@
   "hero": {
     "greeting": "Bonjour, je suis",
     "name": "Yassir Aitali",
-    "title": "Développeur VR & Étudiant en Génie Informatique",
-    "subtitle": "Spécialiste du développement web full-stack et des technologies VR basé au Maroc",
-    "cta": "Voir Mon Travail",
-    "contact": "Me Contacter",
-    "downloadCV": "Télécharger CV"
+    "title": "Ingénieur Logiciel",
+    "tagline": "IA · Full-Stack · 3D Temps Réel & Jumeaux Numériques",
+    "description": "Je développe des systèmes logiciels modernes où workflows IA, plateformes web, données temps réel et 3D interactive se rencontrent — des applications full-stack et dashboards aux outils LLM/RAG et interfaces de jumeaux numériques Unity/WebGL.",
+    "badges": [
+      "Ingénierie IA",
+      "Full-Stack",
+      "React/TypeScript",
+      "Systèmes Temps Réel",
+      "Jumeau Numérique",
+      "Vision par Ordinateur"
+    ],
+    "viewWork": "Voir mes projets",
+    "discuss": "Discuter d'un projet",
+    "downloadCV": "Télécharger CV",
+    "availability": "Ouvert aux opportunités techniques sélectives, collaborations et projets logiciels orientés produit."
   },
   "about": {
     "title": "À Propos de Moi",
-    "description": "Ingénieur Full Stack & Développeur VR motivé, doté de solides fondations en DevOps, Architecture Logicielle et développement Cloud-Native.",
-    "objective": "Je maîtrise le Cycle de Vie Complet du Développement Logiciel (SDLC), et me concentre sur le développement d'applications évolutives, l'implémentation de pipelines CI/CD automatisés et la conteneurisation. Mon expertise technique couvre un large éventail de langages, incluant Java, Python, et JavaScript, ainsi que des frameworks comme React, Spring Boot, et Node.js.\n\nDe plus, je possède une expérience spécialisée en développement VR/XR, tirant parti de compétences en Unity, WebGL, et Blender pour créer des environnements 3D immersifs et des applications web interactives, comme en témoignent mes réalisations sur les visites VR et les systèmes de suivi corporel.\n\nJe suis impatient de mettre à profit mes connaissances en IA/ML et Big Data pour fournir des solutions techniquement excellentes, axées sur l'utilisateur, et qui mettent l'accent sur la performance et une expérience utilisateur optimale.",
-    "yearsExperience": "Années d'Expérience",
-    "projectsCompleted": "Projets Complétés",
-    "technologies": "Technologies"
+    "description": "Je suis ingénieur logiciel en dernière année à l'EMSI, actuellement en stage PFE de 6 mois au Digital Innovation Center (DICE) de l'UM6P sur une plateforme de jumeau numérique industriel. Je travaille sur l'ensemble de la stack et sur plusieurs disciplines : applications orientées IA (intégration LLM, RAG, agents), full-stack web (React/TypeScript, Vue, Node), 3D temps réel et interfaces de jumeaux numériques (Unity/WebGL), et vision par ordinateur.",
+    "objective": "J'utilise l'IA à la fois comme sujet que je maîtrise et comme outil d'ingénierie — du prompting aux pipelines de retrieval jusqu'au développement assisté par IA — tout en gardant le contrôle sur l'architecture, la qualité et la sécurité. Mes projets récents incluent un jumeau numérique industriel, une plateforme immobilière 3D, un système de parking intelligent par vision et du body tracking WebGL. Je tiens aux systèmes qui passent du prototype à un usage réel.",
+    "snapshot": {
+      "title": "Aperçu",
+      "role": "Ingénieur Logiciel — dernière année @ EMSI",
+      "pfe": "PFE @ UM6P DICE — Digital Innovation Center",
+      "location": "Marrakech, Maroc",
+      "languagesLabel": "Langages",
+      "languages": "TypeScript · JavaScript · Python · C# · Java · C++ · PHP · SQL"
+    }
+  },
+  "whatIBuild": {
+    "title": "Ce Que Je Développe",
+    "subtitle": "Quatre domaines que je livre de bout en bout.",
+    "items": [
+      {
+        "title": "Ingénierie IA & Automatisation",
+        "description": "Intégration LLM, systèmes RAG, agents IA, prompt engineering, automatisation documentaire, développement assisté par IA."
+      },
+      {
+        "title": "Plateformes Web Full-Stack",
+        "description": "Front-ends React/Next.js & Vue, APIs Node, bases de données, dashboards, outils d'administration, authentification, applications prêtes au déploiement."
+      },
+      {
+        "title": "3D Temps Réel & Jumeaux Numériques",
+        "description": "Unity/C#, WebGL, Three.js, supervision 3D pilotée par les données, visites virtuelles, interfaces de jumeaux numériques."
+      },
+      {
+        "title": "Vision par Ordinateur",
+        "description": "Body/pose tracking, pipelines de détection, analyse d'images alimentant des interfaces temps réel."
+      }
+    ]
   },
   "experience": {
     "title": "Expérience Professionnelle",
     "present": "Présent",
     "positions": [
       {
-        "role": "Stagiaire – Développeur Full-Stack & VR / Concepteur 3D",
-        "company": "Almoftah Real Estate",
-        "period": "Septembre 2024",
-        "location": "Oman, Muscat",
-        "description":"Développement de visites VR immersives et déploiement avec optimisation(Cloud Storage, compression, caching)",
+        "role": "Ingénieur Logiciel Stagiaire (PFE) — Jumeau Numérique, Temps Réel & Interfaces 3D",
+        "company": "UM6P DICE — Digital Innovation Center of Excellence",
+        "period": "Février 2026 – Août 2026",
+        "location": "Benguerir, Maroc",
+        "description": "PFE de dernière année : développement d'une plateforme de jumeau numérique industriel reliant zones physiques, entités virtuelles et état en temps réel dans une interface de supervision 3D.",
         "achievements": [
-          "Modélisation et intégration d'environnements 3D avec Blender / Maya, optimisation GPU et organisation architecturale du projet (Architecture logicielle modulaire)",
-          "Intégration d'expériences web 3D via Three.js, JavaScript/TypeScript, avec gestion des assets via un pipeline DevOps (GitHub, CI/CD simple)",
-          "Mise en place d'un système de chargement dynamique (lazy loading, structuration scalable) reflétant des pratiques de conception logicielle modernes"
+          "Conception de la logique de jumeau numérique reliant zones physiques, entités virtuelles et état en direct",
+          "Développement d'interfaces de supervision Unity/3D pour le suivi industriel",
+          "Travail avec des concepts de communication temps réel (style MQTT/WebSocket) et des vues de monitoring",
+          "Production de la documentation technique et de la structure du projet"
         ]
       },
       {
-        "role": "Stagiaire – Développeur Full-Stack / Développeur Jeux Vidéo",
+        "role": "Développeur Full-Stack & 3D Temps Réel (Stagiaire)",
+        "company": "Almoftah Real Estate",
+        "period": "Septembre 2024",
+        "location": "Mascate, Oman",
+        "description": "Livraison de visites immobilières 3D immersives sur le web et du pipeline de build pour les diffuser à grande échelle.",
+        "achievements": [
+          "Livraison de visites immobilières 3D immersives sous Unity (C#) déployées en WebGL, avec optimisation du build (cloud storage, compression, caching)",
+          "Modélisation et intégration d'environnements 3D sous Blender / Maya, avec optimisation GPU et architecture de projet modulaire",
+          "Développement d'expériences web 3D avec Three.js et TypeScript, gestion des assets via un pipeline CI/CD GitHub",
+          "Mise en place du chargement dynamique (lazy loading, structure scalable) pour des grandes scènes fluides"
+        ]
+      },
+      {
+        "role": "Développeur Body-Tracking Temps Réel (Stagiaire)",
         "company": "UM6P Vanguard Center",
         "period": "Août 2023",
-        "location": "Benguerir",
-        "description": "Développement d'une application de suivi corporel en temps réel basée sur MediaPipe (IA/ML), pipeline Python → Node.js (WebSocket) → Unity WebGL.",
+        "location": "Benguerir, Maroc",
+        "description": "Développement d'un pipeline de body tracking temps réel, de la caméra à la 3D interactive, exécuté dans le navigateur.",
         "achievements": [
-          "Développement d'une application de suivi corporel en temps réel basée sur MediaPipe (IA/ML), pipeline Python → Node.js (WebSocket) → Unity WebGL",
-          "Exploitation de données de tracking en streaming continu (Big Data léger, traitement en temps réel), normalisation, filtrage et optimisation",
-          "Conception d'une architecture modulaire pour le pipeline (pattern Event-driven, separation of concerns) améliorant la stabilité et la maintenabilité",
-          "Optimisation du rendu en Unity (C#) pour WebGL et intégration dans un environnement Cloud UM6P pour les tests et déploiements internes"
+          "Développement d'une application de body tracking temps réel sur MediaPipe avec un pipeline Python → Node.js (WebSocket) → Unity WebGL",
+          "Traitement de flux de tracking continus avec normalisation, filtrage et optimisation",
+          "Conception d'une architecture modulaire et event-driven améliorant la stabilité et la maintenabilité",
+          "Optimisation du rendu Unity (C#) en WebGL et déploiement sur le cloud UM6P pour les tests internes"
         ]
       },
       {
         "role": "Développeur Full-Stack",
         "company": "SEOCOM",
         "period": "Août 2021",
-        "location": "Marrakech",
-        "description": "Développement full-stack de solutions web avec PHP, JS, MySQL, conception d'API REST structurées selon les principes d'architecture logicielle (MVC).",
+        "location": "Marrakech, Maroc",
+        "description": "Développement et optimisation de solutions web full-stack et d'APIs REST structurées pour la production.",
         "achievements": [
-          "Développement full-stack de solutions web avec PHP, JS, MySQL, conception d'API REST structurées selon les principes d'architecture logicielle (MVC)",
-          "Optimisation des performances backend et gestion des données (requêtes SQL complexes, mini-pipelines de traitement proches de principes Big Data)",
-          "Mise en place de workflows DevOps : Git, branches structurées, déploiement sur serveurs Linux, automatisation basique des mises à jour",
-          "Monitoring applicatif et amélioration de la fiabilité via logs avancés et optimisation de charge"
+          "Développement de solutions web full-stack (PHP, JS, MySQL) avec des APIs REST structurées selon une architecture MVC",
+          "Optimisation des performances backend et de la gestion des données via des requêtes SQL complexes et des pipelines de traitement légers",
+          "Mise en place de workflows DevOps : branches Git, déploiement sur serveurs Linux et automatisation basique des mises à jour",
+          "Amélioration de la fiabilité via monitoring applicatif, logs avancés et optimisation de charge"
         ]
       }
     ]
   },
   "projects": {
-    "title": "Projets",
-    "viewProject": "Voir le Projet",
+    "title": "Projets Sélectionnés",
+    "subtitle": "Quelques études de cas qui montrent comment je travaille entre IA, full-stack et 3D temps réel.",
     "viewCode": "Voir le Code",
-    "items": [
+    "viewProject": "Démo en Ligne",
+    "labels": {
+      "context": "Contexte",
+      "problem": "Problème",
+      "built": "Ce que j'ai construit",
+      "stack": "Stack",
+      "demonstrates": "Ce que ça démontre",
+      "status": "Statut",
+      "confidential": "Privé / Confidentiel",
+      "alsoBuilt": "Également réalisé",
+      "alsoBuiltSubtitle": "Projets plus petits, expérimentations et travaux académiques."
+    },
+    "featured": [
       {
-        "title": "KEY ONE – Plateforme VR Immobilière",
-        "description": "Plateforme complète de visualisation immobilière avec visites VR immersives, exploration 3D interactive des bâtiments et cartographie des emplacements. Développée avec Next.js et Three.js pour des expériences VR web fluides, présentant des appartements avec panoramas 360°, plans d'étage et intégration des points d'intérêt.",
-        "tech": ["TypeScript", "Next.js", "Three.js", "React", "WebGL", "Modélisation 3D", "Tailwind CSS"],
-        "features": ["Visualiseur 3D interactif", "Visites VR 360°", "Cartographie temps réel", "Visualisation plans d'étage", "Outil comparaison propriétés", "Design responsive"],
+        "title": "Plateforme de Jumeau Numérique Industriel",
+        "tagline": "Supervision 3D Temps Réel · PFE @ UM6P DICE",
+        "context": "PFE de dernière année au Digital Innovation Center of Excellence (DICE) de l'UM6P : développement d'une plateforme de jumeau numérique industriel pour la supervision Industrie 4.0.",
+        "problem": "Les opérateurs doivent superviser des zones industrielles physiques, des capteurs et des alertes depuis une interface unique et intuitive qui reflète l'installation réelle en 3D.",
+        "built": "Une interface de supervision Unity 3D/VR adossée à une couche de données Python, avec mapping sémantique des zones physiques vers des objets virtuels et supervision temps réel des capteurs/alertes.",
+        "stack": ["Unity", "C#", "Python", "Flux de données temps réel (style MQTT/WebSocket)", "Architecture de jumeau numérique", "Industrie 4.0"],
+        "demonstrates": "Ingénierie de jumeau numérique de bout en bout : relier l'état physique à un modèle 3D vivant et concevoir l'UX de supervision de données industrielles.",
+        "status": "PFE — étude de cas de haut niveau, aucune donnée confidentielle.",
+        "tags": ["Jumeau Numérique", "Unity", "Temps Réel", "Industrie 4.0"],
+        "confidential": true,
+        "github": "",
+        "demo": "",
+        "image": ""
+      },
+      {
+        "title": "Assistant IA / Système RAG",
+        "tagline": "Intelligence Documentaire · Retrieval-Augmented Generation",
+        "context": "Une application d'intelligence documentaire conçue pour explorer la véritable ingénierie IA, au-delà de simples appels d'API.",
+        "problem": "Les équipes accumulent de larges corpus de documents mais ne peuvent pas obtenir rapidement des réponses fiables et sourcées.",
+        "built": "Une application pour téléverser des documents, poser des questions et obtenir des réponses et résumés sourcés, via un pipeline de retrieval sur des embeddings.",
+        "stack": ["Next.js", "TypeScript", "Python (FastAPI)", "API OpenAI / Anthropic", "ChromaDB", "Embeddings", "API REST"],
+        "demonstrates": "De la vraie ingénierie IA — pipelines de retrieval, grounding et réflexion produit, pas seulement un appel d'API.",
+        "status": "En cours",
+        "tags": ["IA", "RAG", "LLM", "Automatisation"],
+        "confidential": false,
+        "github": "",
+        "demo": "",
+        "image": ""
+      },
+      {
+        "title": "KEY ONE — Plateforme de Visualisation Immobilière 3D",
+        "tagline": "React/TypeScript · Navigation Immobilière 3D Interactive",
+        "context": "Une plateforme immobilière React/TypeScript pour naviguer dans les biens en 3D interactive.",
+        "problem": "Les acheteurs peinent à comprendre l'agencement spatial et la disponibilité des unités à partir d'annonces statiques.",
+        "built": "Navigation immobilière 3D / hex-map interactive et un planificateur visuel d'unités pour parcourir et comparer les biens.",
+        "stack": ["React", "TypeScript", "Three.js/WebGL", "Tailwind CSS"],
+        "demonstrates": "Ingénierie front-end orientée production avec 3D temps réel et état interactif complexe.",
+        "status": "Livré",
+        "tags": ["React", "TypeScript", "WebGL/3D", "Immobilier"],
+        "confidential": false,
         "github": "https://github.com/YasserAet/KEY1-V2",
         "demo": "",
-        "year": "2024",
-        "featured": true
+        "image": ""
       },
       {
-        "title": "Système de Suivi Corporel WebGL",
-        "description": "Application de suivi corporel temps réel développée avec Unity et déployée en WebGL. Détection de pose avancée, intégration WebSocket pour streaming de données en direct, et performances optimisées pour navigateurs web. Développée durant le stage au Centre Vanguard UM6P pour applications fitness interactives et capture de mouvement.",
-        "tech": ["Unity", "WebGL", "C#", "WebSocket", "Détection Pose", "Traitement Temps Réel"],
-        "features": ["Suivi pose corporelle temps réel", "Streaming WebSocket", "Déploiement navigateur", "Optimisation haute performance", "Précision capture mouvement", "Compatibilité cross-platform"],
-        "github": "https://github.com/YasserAet/Webgl_Body_Tracking",
-        "demo": "",
-        "year": "2023",
-        "featured": true
-      },
-      {
-        "title": "OPTIPARK – Système de Parking Intelligent",
-        "description": "Système intelligent de gestion de parking utilisant vision par ordinateur et OpenCV pour détection temps réel des places de parking. Surveillance automatisée des places, suivi d'occupation et intégration WebSocket pour mises à jour en direct. Développé avec Python pour traitement vidéo efficace et optimisation du parking.",
-        "tech": ["Python", "OpenCV", "Vision Ordinateur", "WebSocket", "Traitement Image", "Détection Temps Réel"],
-        "features": ["Détection automatique places", "Suivi occupation temps réel", "Traitement flux vidéo", "Mises à jour WebSocket", "Analytique parking", "Gestion efficace espaces"],
+        "title": "OPTIPARK — Parking Intelligent par Vision",
+        "tagline": "Détection → API → Dashboard Temps Réel",
+        "context": "Un système de parking intelligent qui détecte les places libres depuis des flux caméra et les affiche sur un dashboard temps réel.",
+        "problem": "Les conducteurs perdent du temps à chercher une place ; les exploitants manquent de données d'occupation en temps réel.",
+        "built": "Un système trois-tiers : la détection par vision alimente une API qui diffuse l'occupation vers un dashboard de monitoring temps réel.",
+        "stack": ["Python", "OpenCV", "Node", "Vue", "WebSocket", "Vision par Ordinateur"],
+        "demonstrates": "Une vision systèmes full-stack à travers la CV, le backend et un dashboard front-end en direct.",
+        "status": "Prototype",
+        "tags": ["Vision par Ordinateur", "Full-Stack", "Vue", "Node", "Dashboard"],
+        "confidential": false,
         "github": "https://github.com/YasserAet/OPTIPARK",
         "demo": "",
-        "year": "2024",
-        "featured": true
+        "image": ""
       },
       {
-        "title": "Système de Gestion Hôtelière (C#)",
-        "description": "Application desktop de gestion hôtelière développée avec C# et .NET, incluant gestion complète des réservations, enregistrement des clients, allocation des chambres et systèmes de facturation. Conçue pour opérations hôtelières efficaces avec interface utilisateur intuitive.",
-        "tech": ["C#", ".NET", "Windows Forms", "SQL Server", "App Desktop"],
-        "features": ["Gestion des clients", "Système de réservation", "Facturation et facturation", "Suivi des réservations", "Tableau de bord admin"],
-        "github": "https://github.com/YasserAet/HOTEL-MANAGEMENT-APP-2",
+        "title": "Système de Body Tracking WebGL",
+        "tagline": "Suivi de Pose Temps Réel dans le Navigateur",
+        "context": "Suivi de pose/corps en temps réel exécuté dans un build Unity WebGL, issu d'un stage au Vanguard Center de l'UM6P.",
+        "problem": "Les expériences de body tracking nécessitent généralement une application native ; celle-ci vise directement le navigateur.",
+        "built": "Un pipeline de suivi de pose/corps temps réel rendu dans un build Unity WebGL, alimenté par des données diffusées en direct.",
+        "stack": ["Unity", "C#", "WebGL", "WebSocket", "Détection de Pose"],
+        "demonstrates": "Vision par ordinateur temps réel intégrée à de la 3D interactive et livrée dans le navigateur.",
+        "status": "Terminé",
+        "tags": ["Vision par Ordinateur", "Unity", "WebGL", "Temps Réel"],
+        "confidential": false,
+        "github": "https://github.com/YasserAet/Webgl_Body_Tracking",
         "demo": "",
-        "year": "2022"
+        "image": ""
       },
       {
-        "title": "HMS – Gestion Hôtelière (Qt/C++)",
-        "description": "Système de gestion hôtelière cross-platform développé avec Qt et C++. Gestion avancée des chambres, services clients, opérations de facturation et fonctionnalité de reporting. Inclut intégration base de données complète et design UI moderne.",
-        "tech": ["C++", "Qt", "QMake", "SQLite", "Cross-platform"],
-        "features": ["Gestion des chambres", "Services clients", "Système de facturation", "Génération rapports", "Intégration base données", "UI Qt moderne"],
-        "github": "https://github.com/YasserAet/HMS",
+        "title": "Système de Vérification de Certificats par Blockchain",
+        "tagline": "Vérification de Credentials Infalsifiable",
+        "context": "Un prototype de vérification infalsifiable de credentials et certificats.",
+        "problem": "Les certificats papier et PDF sont faciles à falsifier et difficiles à vérifier à grande échelle.",
+        "built": "Un prototype de vérification de credentials utilisant des contrôles d'intégrité adossés à une blockchain.",
+        "stack": ["Python / Jupyter", "TypeScript", "Concepts blockchain"],
+        "demonstrates": "Application de l'intégrité cryptographique et de la vérification à un vrai problème de confiance.",
+        "status": "Prototype",
+        "tags": ["Blockchain", "Vérification", "Prototype"],
+        "confidential": false,
+        "github": "https://github.com/YasserAet/Blockchain-Certificate-Verification-System",
         "demo": "",
-        "year": "2022"
+        "image": ""
       },
       {
-        "title": "Gestion Salles – Système Réservation Salles",
-        "description": "Système web de gestion de réservation de salles et installations développé avec le framework Laravel. Authentification utilisateur, calendrier de réservation, suivi de disponibilité et contrôles administratifs pour gérer plusieurs salles et horaires.",
-        "tech": ["PHP", "Laravel", "JavaScript", "Blade", "MySQL", "Tailwind CSS"],
-        "features": ["Système réservation salles", "Authentification utilisateur", "Calendrier disponibilité", "Tableau de bord admin", "Gestion réservations", "Design responsive"],
-        "github": "https://github.com/YasserAet/Gestion_salles",
+        "title": "Benchmark de Performance de Stack REST",
+        "tagline": "Mesurer les Compromis, Pas Deviner",
+        "context": "Un harnais de benchmark comparant le comportement des choix de stack REST sous charge.",
+        "problem": "Les décisions de stack sont souvent prises à l'intuition plutôt que sur des compromis mesurés.",
+        "built": "Un benchmark qui mesure l'impact des choix de stack REST sur la latence, le débit et l'usage des ressources.",
+        "stack": ["JavaScript", "Node", "Benchmarking"],
+        "demonstrates": "Rigueur d'ingénierie — mesurer les compromis au lieu de deviner.",
+        "status": "Terminé",
+        "tags": ["Backend", "Performance"],
+        "confidential": false,
+        "github": "https://github.com/YasserAet/Performance-REST-Benchmark",
         "demo": "",
-        "year": "2023"
+        "image": ""
       }
+    ],
+    "alsoBuilt": [
+      { "title": "RoadSense-MS — Analyse Routière", "github": "https://github.com/YasserAet/RoadSense-MS" },
+      { "title": "Gestion Hôtelière (C#)", "github": "https://github.com/YasserAet/HOTEL-MANAGEMENT-APP-2" },
+      { "title": "HMS — Gestion Hôtelière (Qt/C++)", "github": "https://github.com/YasserAet/HMS" },
+      { "title": "Emploi du Temps Scolaire (PHP)", "github": "https://github.com/YasserAet/School_Timetable" },
+      { "title": "MQ-TESTS — Files de Messages", "github": "https://github.com/YasserAet/MQ-TESTS" },
+      { "title": "NMAPGEN — Outillage Réseau", "github": "https://github.com/YasserAet/NMAPGEN" }
     ]
   },
   "education": {
     "title": "Formation",
     "degrees": [
       {
-        "degree": "Cycle d'Ingénieur – MIAGE",
-        "institution": "École Marocaine des Sciences de l'Ingénieur",
+        "degree": "Cycle d'Ingénieur en Génie Logiciel",
+        "institution": "EMSI — École Marocaine des Sciences de l'Ingénieur",
         "period": "Octobre 2023 – Présent",
         "location": "Marrakech, Maroc",
-        "specialization": "DevOps, IA, Big Data, Architecture Logicielle, Cloud Computing",
-        "description": "Poursuite d'un diplôme d'ingénieur avancé avec focus sur les architectures logicielles modernes et les technologies IA."
+        "specialization": "Architecture Logicielle, IA, Big Data, DevOps, Cloud Computing",
+        "description": "Dernière année de cycle d'ingénieur en génie logiciel, axée sur l'architecture logicielle moderne et les technologies IA."
       },
       {
         "degree": "Diplôme Développeur VR",
@@ -284,47 +400,55 @@
   "skills": {
     "title": "Compétences & Expertise",
     "categories": {
-      "programming": {
-        "title": "Langages de Programmation",
-        "items": ["JavaScript", "TypeScript", "Python", "C#", "HTML5", "CSS3", "SQL"]
+      "ai": {
+        "title": "Ingénierie IA & LLM",
+        "items": ["Intégration LLM", "RAG", "Agents IA", "Prompt engineering", "Embeddings", "Bases vectorielles", "Sorties structurées", "Développement assisté par IA", "Automatisation documentaire"]
       },
-      "frontend": {
-        "title": "Développement Frontend",
-        "items": ["React", "Next.js", "Vue.js", "Tailwind CSS", "GSAP", "Three.js", "Redux"]
+      "languages": {
+        "title": "Langages & Fondamentaux",
+        "items": ["TypeScript", "JavaScript", "Python", "C", "C#", "Java", "C++", "PHP", "SQL", "POO", "APIs REST", "Git"]
+      },
+      "fullstack": {
+        "title": "Web Full-Stack",
+        "items": ["React", "Vue.js", "Node.js", "Express", "Django", "Laravel", "HTML5", "CSS3", "Tailwind CSS", "MySQL", "MongoDB", "Dashboards", "Panneaux d'administration"]
+      },
+      "realtime3d": {
+        "title": "3D Temps Réel / Jumeau Numérique",
+        "items": ["Unity", "Unreal Engine", "C#", "WebGL", "WebXR", "Three.js", "Visualisation 3D", "Interfaces de jumeaux numériques", "Concepts MQTT/WebSocket", "Blender", "Autodesk Maya", "3ds Max", "Cinema 4D", "Substance Painter", "ZBrush", "After Effects", "ARKit", "ARCore", "Vuforia"]
+      },
+      "vision": {
+        "title": "Vision par Ordinateur",
+        "items": ["Body/pose tracking", "Pipelines de détection", "OpenCV", "MediaPipe", "Intégration CV temps réel"]
       },
       "backend": {
-        "title": "Développement Backend",
-        "items": ["Node.js", "Express", "FastAPI", "Django", "REST APIs", "Microservices", "GraphQL"]
+        "title": "Backend & Systèmes",
+        "items": ["Conception d'API", "Benchmarking de performance", "Files de messages", "Architecture d'entreprise", "Bases du parsing/compilation"]
       },
-      "xr": {
-        "title": "Technologies 3D/XR",
-        "items": ["Unity", "Unreal Engine", "Blender", "Modélisation 3D", "Développement VR", "Développement AR"]
-      },
-      "database": {
-        "title": "Bases de Données & Outils",
-        "items": ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis", "Docker"]
-      },
-      "tools": {
-        "title": "Outils & Plateformes",
-        "items": ["Git", "GitHub", "VS Code", "Figma", "Postman", "Linux", "CI/CD"]
+      "devops": {
+        "title": "DevOps / Déploiement",
+        "items": ["Git/GitHub", "GitHub Pages", "Docker", "Linux", "CI/CD"]
       }
     }
   },
   "contact": {
     "title": "Contactez-Moi",
-    "subtitle": "Je suis toujours intéressé par de nouvelles opportunités et collaborations.",
+    "subtitle": "Pour des rôles en ingénierie logicielle, des projets IA / RAG, du temps réel & jumeaux numériques, des outils de vision par ordinateur ou des collaborations full-stack — contactez-moi directement.",
+    "infoTitle": "Informations de Contact",
+    "connectTitle": "Me Suivre",
+    "formTitle": "Envoyez-moi un Message",
+    "downloadCV": "Télécharger CV",
     "form": {
       "name": "Votre Nom",
       "email": "Votre Email",
       "message": "Votre Message",
       "send": "Envoyer le Message",
       "sending": "Envoi en cours...",
-      "success": "Message envoyé avec succès !",
-      "error": "Échec de l'envoi du message. Veuillez réessayer."
+      "success": "Merci — votre message a été envoyé. Je vous répondrai bientôt.",
+      "error": "Une erreur est survenue. Merci de m'écrire directement par email."
     },
     "info": {
       "email": "yasseraitali@outlook.fr",
-      "phone": "+212 6 09 08 41 05",
+      "phone": "Contact par email",
       "location": "Marrakech, Maroc"
     },
     "social": {

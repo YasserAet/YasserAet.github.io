@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Award, Briefcase, Code } from 'lucide-react';
+import { Briefcase, MapPin, GraduationCap, Code2 } from 'lucide-react';
 import gsap from 'gsap';
 
 const About = () => {
@@ -26,10 +26,10 @@ const About = () => {
     }
   }, [inView]);
 
-  const stats = [
-    { icon: Briefcase, value: '2+', label: t('about.yearsExperience') },
-    { icon: Code, value: '15+', label: t('about.projectsCompleted') },
-    { icon: Award, value: '20+', label: t('about.technologies') },
+  const snapshotRows = [
+    { icon: GraduationCap, text: t('about.snapshot.role') },
+    { icon: Briefcase, text: t('about.snapshot.pfe') },
+    { icon: MapPin, text: t('about.snapshot.location') },
   ];
 
   return (
@@ -64,19 +64,32 @@ const About = () => {
             </p>
           </div>
 
-          {/* Stats */}
-          <div className="about-card grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-6">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05, translateY: -5 }}
-                className="glass-effect p-6 rounded-2xl text-center"
-              >
-                <stat.icon className="w-10 h-10 text-primary-400 mx-auto mb-3" />
-                <div className="text-3xl font-bold text-gradient mb-2">{stat.value}</div>
-                <div className="text-sm text-dark-300">{stat.label}</div>
-              </motion.div>
-            ))}
+          {/* Snapshot */}
+          <div className="about-card">
+            <div className="glass-effect p-8 rounded-2xl h-full">
+              <h3 className="text-xl font-bold text-gradient mb-6">
+                {t('about.snapshot.title')}
+              </h3>
+              <div className="space-y-5">
+                {snapshotRows.map((row, index) => (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary-600/20 rounded-full flex items-center justify-center">
+                      <row.icon className="text-primary-400" size={18} />
+                    </div>
+                    <span className="text-dark-100 font-medium pt-1.5">{row.text}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-8 pt-6 border-t border-dark-700">
+                <div className="flex items-center gap-2 mb-3 text-sm text-dark-300">
+                  <Code2 size={16} className="text-primary-400" />
+                  {t('about.snapshot.languagesLabel')}
+                </div>
+                <p className="text-dark-200 text-sm leading-relaxed">
+                  {t('about.snapshot.languages')}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

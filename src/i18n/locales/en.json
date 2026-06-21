@@ -1,9 +1,6 @@
 {
   "announcement": {
-    "badge": "Open to Opportunities",
-    "title": "Actively Seeking PFE Internship",
-    "details": "Available from February 2025 • 4-6 months • Open to full-time conversion",
-    "cta": "Get in Touch"
+    "text": "Building practical systems across AI, web, real-time data, and immersive 3D interfaces."
   },
   "nav": {
     "home": "Home",
@@ -18,139 +15,257 @@
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Yassir Aitali",
-    "title": "VR Developer & Computer Science Engineering Student",
-    "subtitle": "Full-stack web development and VR technologies specialist based in Morocco",
-    "cta": "View My Work",
-    "contact": "Get in Touch",
-    "downloadCV": "Download CV"
+    "title": "Software Engineer",
+    "tagline": "AI · Full-Stack · Real-Time 3D & Digital Twins",
+    "description": "I build modern software systems where AI workflows, web platforms, real-time data, and interactive 3D meet — from full-stack apps and dashboards to LLM/RAG tools and Unity/WebGL digital-twin interfaces.",
+    "badges": [
+      "AI Engineering",
+      "Full-Stack",
+      "React/TypeScript",
+      "Real-Time Systems",
+      "Digital Twin",
+      "Computer Vision"
+    ],
+    "viewWork": "View Selected Work",
+    "discuss": "Discuss a Project",
+    "downloadCV": "Download CV",
+    "availability": "Open to selected software engineering roles, technical collaborations, and product-driven projects."
   },
   "about": {
     "title": "About Me",
-    "description": "Motivated Full Stack Engineer & VR Developer with a solid foundation in DevOps, Software Architecture, and Cloud development.",
-    "objective": "I am proficient in the complete Software Development Life Cycle (SDLC), focusing on developing scalable applications and implementing automated CI/CD pipelines and containerization. My technical expertise spans a wide range of languages including Java, Python, and JavaScript, and frameworks such as React, Spring Boot, and Node.js.\n\nFurthermore, I have specialized experience in VR/XR development, leveraging skills in Unity, WebGL, and Blender to create immersive 3D environments and interactive web applications, as demonstrated by my work on VR tours and body tracking systems.\n\nI am eager to apply my knowledge in AI/ML and Big Data to deliver technically excellent, user-focused solutions that emphasize performance and an optimal user experience.",
-    "yearsExperience": "Years Experience",
-    "projectsCompleted": "Projects Completed",
-    "technologies": "Technologies"
+    "description": "I'm a software engineer finishing my final-year degree at EMSI, currently completing a 6-month PFE internship at UM6P's Digital Innovation Center (DICE) on an industrial digital-twin platform. I work across the stack and across disciplines: AI-enabled applications (LLM integration, RAG, agents), full-stack web (React/TypeScript, Vue, Node), real-time 3D and digital-twin interfaces (Unity/WebGL), and computer vision.",
+    "objective": "I use AI both as a subject I understand and as an engineering tool — from prompting and retrieval pipelines to AI-assisted development — while keeping control over architecture, quality, and security. My recent work spans an industrial digital twin, a real-estate 3D platform, a computer-vision smart-parking system, and WebGL body tracking. I care about systems that move from prototype to something real people can actually use.",
+    "snapshot": {
+      "title": "Snapshot",
+      "role": "Software Engineer — final-year @ EMSI",
+      "pfe": "PFE @ UM6P DICE — Digital Innovation Center",
+      "location": "Marrakech, Morocco",
+      "languagesLabel": "Languages",
+      "languages": "TypeScript · JavaScript · Python · C# · Java · C++ · PHP · SQL"
+    }
+  },
+  "whatIBuild": {
+    "title": "What I Build",
+    "subtitle": "Four areas where I deliver end-to-end.",
+    "items": [
+      {
+        "title": "AI Engineering & Automation",
+        "description": "LLM integration, RAG systems, AI agents, prompt engineering, document automation, and AI-assisted development workflows."
+      },
+      {
+        "title": "Full-Stack Web Platforms",
+        "description": "React/Next.js & Vue front-ends, Node APIs, databases, dashboards, admin tools, authentication, deployment-ready apps."
+      },
+      {
+        "title": "Real-Time 3D & Digital Twins",
+        "description": "Unity/C#, WebGL, Three.js, live data-driven 3D supervision, virtual tours, digital-twin interfaces."
+      },
+      {
+        "title": "Computer Vision",
+        "description": "Body/pose tracking, detection pipelines, image analysis feeding real-time interfaces."
+      }
+    ]
   },
   "experience": {
     "title": "Professional Experience",
     "present": "Present",
     "positions": [
       {
-        "role": "Intern – Full-Stack & VR Developer / 3D Designer",
-        "company": "Almoftah Real Estate",
-        "period": "September 2024",
-        "location": "Oman, Muscat",
-        "description": "Development of immersive VR tours via Unity (C#) and WebGL deployment with build pipeline optimization.",
+        "role": "Software Engineer Intern (PFE) — Digital Twin, Real-Time Systems & 3D Interfaces",
+        "company": "UM6P DICE — Digital Innovation Center of Excellence",
+        "period": "February 2026 – August 2026",
+        "location": "Benguerir, Morocco",
+        "description": "Final-year PFE building an industrial digital-twin platform: linking physical zones, virtual entities, and live state into a real-time 3D supervision interface.",
         "achievements": [
-          "Development of immersive VR tours via Unity (C#) and WebGL deployment with build pipeline optimization (Cloud Storage, compression, caching)",
-          "3D environment modeling and integration with Blender / Maya, GPU optimization and project architectural organization (Modular software architecture)",
-          "Integration of 3D web experiences via Three.js, JavaScript/TypeScript, with asset management through a DevOps pipeline (GitHub, simple CI/CD)",
-          "Implementation of dynamic loading system (lazy loading, scalable structuring) reflecting modern software design practices"
+          "Designed digital-twin logic linking physical zones, virtual entities, and live state",
+          "Built Unity/3D supervision interfaces for industrial monitoring",
+          "Worked with real-time communication concepts (MQTT/WebSocket-style) and monitoring views",
+          "Produced technical documentation and project structure"
         ]
       },
       {
-        "role": "Intern – Full-Stack Developer / Video Game Developer",
+        "role": "Full-Stack & Real-Time 3D Developer (Intern)",
+        "company": "Almoftah Real Estate",
+        "period": "September 2024",
+        "location": "Muscat, Oman",
+        "description": "Shipped immersive web-based 3D property tours and the build pipeline to deliver them at scale.",
+        "achievements": [
+          "Delivered immersive 3D property tours in Unity (C#) deployed to WebGL, with build optimization (cloud storage, compression, caching)",
+          "Modeled and integrated 3D environments in Blender / Maya, with GPU optimization and a modular project architecture",
+          "Built 3D web experiences with Three.js and TypeScript, managing assets through a GitHub CI/CD pipeline",
+          "Implemented dynamic loading (lazy loading, scalable structure) for smooth large-scene delivery"
+        ]
+      },
+      {
+        "role": "Real-Time Body-Tracking Developer (Intern)",
         "company": "UM6P Vanguard Center",
         "period": "August 2023",
-        "location": "Benguerir",
-        "description": "Development of a real-time body tracking application based on MediaPipe (AI/ML), Python → Node.js (WebSocket) → Unity WebGL pipeline.",
+        "location": "Benguerir, Morocco",
+        "description": "Built a real-time body-tracking pipeline from camera to interactive 3D, running in the browser.",
         "achievements": [
-          "Development of a real-time body tracking application based on MediaPipe (AI/ML), Python → Node.js (WebSocket) → Unity WebGL pipeline",
-          "Exploitation of tracking data in continuous streaming (light Big Data, real-time processing), normalization, filtering and optimization",
-          "Design of a modular architecture for the pipeline (Event-driven pattern, separation of concerns) improving stability and maintainability",
-          "Optimization of Unity (C#) rendering for WebGL and integration in UM6P Cloud environment for internal testing and deployments"
+          "Built a real-time body-tracking app on MediaPipe with a Python → Node.js (WebSocket) → Unity WebGL pipeline",
+          "Processed continuous tracking streams with normalization, filtering, and optimization",
+          "Designed a modular, event-driven architecture improving stability and maintainability",
+          "Optimized Unity (C#) WebGL rendering and deployed to UM6P's cloud for internal testing"
         ]
       },
       {
         "role": "Full-Stack Developer",
         "company": "SEOCOM",
         "period": "August 2021",
-        "location": "Marrakech",
-        "description": "Full-stack development of web solutions with PHP, JS, MySQL, REST API design structured according to software architecture principles (MVC).",
+        "location": "Marrakech, Morocco",
+        "description": "Built and optimized full-stack web solutions and structured REST APIs for production use.",
         "achievements": [
-          "Full-stack development of web solutions with PHP, JS, MySQL, REST API design structured according to software architecture principles (MVC)",
-          "Backend performance optimization and data management (complex SQL queries, mini-processing pipelines close to Big Data principles)",
-          "Implementation of DevOps workflows: Git, structured branches, deployment on Linux servers, basic automation of updates",
-          "Application monitoring and reliability improvement via advanced logs and load optimization"
+          "Built full-stack web solutions (PHP, JS, MySQL) with REST APIs structured on an MVC architecture",
+          "Optimized backend performance and data handling with complex SQL queries and lightweight processing pipelines",
+          "Set up DevOps workflows: Git branching, Linux server deployment, and basic update automation",
+          "Improved reliability through application monitoring, advanced logging, and load optimization"
         ]
       }
     ]
   },
   "projects": {
-    "title": "Projects",
-    "viewProject": "View Project",
+    "title": "Selected Work",
+    "subtitle": "A few case studies that show how I work across AI, full-stack, and real-time 3D.",
     "viewCode": "View Code",
-    "items": [
+    "viewProject": "Live Demo",
+    "labels": {
+      "context": "Context",
+      "problem": "Problem",
+      "built": "What I built",
+      "stack": "Stack",
+      "demonstrates": "What it demonstrates",
+      "status": "Status",
+      "confidential": "Private / Confidential",
+      "alsoBuilt": "Also built",
+      "alsoBuiltSubtitle": "Smaller projects, experiments, and coursework."
+    },
+    "featured": [
       {
-        "title": "KEY ONE – Real Estate VR Platform",
-        "description": "Comprehensive real estate visualization platform featuring immersive VR property tours, interactive 3D building exploration, and location mapping. Built with Next.js and Three.js for seamless web-based VR experiences, showcasing apartments with 360° panoramas, floor plans, and nearby landmarks integration.",
-        "tech": ["TypeScript", "Next.js", "Three.js", "React", "WebGL", "3D Modeling", "Tailwind CSS"],
-        "features": ["Interactive 3D building viewer", "360° VR property tours", "Real-time location mapping", "Floor plan visualization", "Property comparison tool", "Responsive design"],
+        "title": "Industrial Digital Twin Platform",
+        "tagline": "Real-Time 3D Supervision · PFE @ UM6P DICE",
+        "context": "Final-year PFE at UM6P's Digital Innovation Center of Excellence (DICE), building an industrial digital-twin platform for Industry 4.0 supervision.",
+        "problem": "Operators need to monitor physical industrial zones, sensors, and alerts from a single intuitive interface that mirrors the real installation in 3D.",
+        "built": "A Unity 3D/VR supervision interface backed by a Python data layer, with semantic mapping of physical zones to virtual objects and real-time sensor/alert supervision.",
+        "stack": ["Unity", "C#", "Python", "Real-time data flows (MQTT/WebSocket-style)", "Digital-twin architecture", "Industry 4.0"],
+        "demonstrates": "End-to-end digital-twin engineering: connecting physical state to a live 3D model and designing supervision UX for industrial data.",
+        "status": "PFE — high-level case study, no confidential data.",
+        "tags": ["Digital Twin", "Unity", "Real-Time", "Industry 4.0"],
+        "confidential": true,
+        "github": "",
+        "demo": "",
+        "image": ""
+      },
+      {
+        "title": "AI Assistant / RAG System",
+        "tagline": "Document Intelligence · Retrieval-Augmented Generation",
+        "context": "A document-intelligence application built to explore real AI engineering beyond simple API calls.",
+        "problem": "Teams sit on large document sets but can't quickly get trustworthy, source-grounded answers.",
+        "built": "An app to upload documents, ask questions, and get source-grounded answers and summaries, backed by a retrieval pipeline over embeddings.",
+        "stack": ["Next.js", "TypeScript", "Python (FastAPI)", "OpenAI / Anthropic API", "ChromaDB", "Embeddings", "REST API"],
+        "demonstrates": "Real AI engineering — retrieval pipelines, grounding, and product thinking, not just calling an API.",
+        "status": "In progress",
+        "tags": ["AI", "RAG", "LLM", "Automation"],
+        "confidential": false,
+        "github": "",
+        "demo": "",
+        "image": ""
+      },
+      {
+        "title": "KEY ONE — Real-Estate 3D Visualization Platform",
+        "tagline": "React/TypeScript · Interactive 3D Property Navigation",
+        "context": "A React/TypeScript real-estate platform for navigating properties in interactive 3D.",
+        "problem": "Buyers struggle to understand spatial layout and unit availability from static listings.",
+        "built": "Interactive 3D / hex-map property navigation and a visual unit planner for browsing and comparing units.",
+        "stack": ["React", "TypeScript", "Three.js/WebGL", "Tailwind CSS"],
+        "demonstrates": "Production-oriented front-end engineering with real-time 3D and complex interactive state.",
+        "status": "Delivered",
+        "tags": ["React", "TypeScript", "WebGL/3D", "Real Estate"],
+        "confidential": false,
         "github": "https://github.com/YasserAet/KEY1-V2",
         "demo": "",
-        "year": "2024",
-        "featured": true
+        "image": ""
+      },
+      {
+        "title": "OPTIPARK — Computer-Vision Smart Parking",
+        "tagline": "Detection → API → Live Dashboard",
+        "context": "A smart-parking system that detects free spaces from camera feeds and surfaces them on a live dashboard.",
+        "problem": "Drivers waste time hunting for free spaces; operators lack real-time occupancy data.",
+        "built": "A three-tier system: computer-vision detection feeds an API, which streams occupancy to a real-time monitoring dashboard.",
+        "stack": ["Python", "OpenCV", "Node", "Vue", "WebSocket", "Computer Vision"],
+        "demonstrates": "Full-stack systems thinking across CV, backend, and a live front-end dashboard.",
+        "status": "Prototype",
+        "tags": ["Computer Vision", "Full-Stack", "Vue", "Node", "Dashboard"],
+        "confidential": false,
+        "github": "https://github.com/YasserAet/OPTIPARK",
+        "demo": "",
+        "image": ""
       },
       {
         "title": "WebGL Body Tracking System",
-        "description": "Real-time body tracking application developed with Unity and deployed as WebGL. Features advanced pose detection, WebSocket integration for live data streaming, and optimized performance for web browsers. Built during internship at UM6P Vanguard Center for interactive fitness and motion capture applications.",
-        "tech": ["Unity", "WebGL", "C#", "WebSocket", "Pose Detection", "Real-time Processing"],
-        "features": ["Real-time body pose tracking", "WebSocket streaming", "Browser-based deployment", "High-performance optimization", "Motion capture accuracy", "Cross-platform compatibility"],
+        "tagline": "Real-Time Pose Tracking in the Browser",
+        "context": "Real-time pose/body tracking running inside a Unity WebGL build, from an internship at UM6P's Vanguard Center.",
+        "problem": "Body-tracking experiences usually require a native app; this one targets the browser directly.",
+        "built": "A real-time pose/body tracking pipeline rendered in a Unity WebGL build, fed by live streamed data.",
+        "stack": ["Unity", "C#", "WebGL", "WebSocket", "Pose Detection"],
+        "demonstrates": "Real-time computer vision integrated into interactive 3D and shipped to the browser.",
+        "status": "Completed",
+        "tags": ["Computer Vision", "Unity", "WebGL", "Real-Time"],
+        "confidential": false,
         "github": "https://github.com/YasserAet/Webgl_Body_Tracking",
         "demo": "",
-        "year": "2023",
-        "featured": true
+        "image": ""
       },
       {
-        "title": "OPTIPARK – Smart Parking System",
-        "description": "Intelligent parking management system using computer vision and OpenCV for real-time parking space detection. Features automated space monitoring, occupancy tracking, and WebSocket integration for live updates. Developed with Python for efficient video processing and parking optimization.",
-        "tech": ["Python", "OpenCV", "Computer Vision", "WebSocket", "Image Processing", "Real-time Detection"],
-        "features": ["Automated space detection", "Real-time occupancy tracking", "Video stream processing", "WebSocket live updates", "Parking analytics", "Efficient space management"],
-        "github": "https://github.com/YasserAet/OPTIPARK",
+        "title": "Blockchain Certificate Verification System",
+        "tagline": "Tamper-Proof Credential Verification",
+        "context": "A prototype for tamper-proof verification of credentials and certificates.",
+        "problem": "Paper and PDF certificates are easy to forge and hard to verify at scale.",
+        "built": "A credential-verification prototype using blockchain-backed integrity checks.",
+        "stack": ["Python / Jupyter", "TypeScript", "Blockchain concepts"],
+        "demonstrates": "Applying cryptographic integrity and verification to a real trust problem.",
+        "status": "Prototype",
+        "tags": ["Blockchain", "Verification", "Prototype"],
+        "confidential": false,
+        "github": "https://github.com/YasserAet/Blockchain-Certificate-Verification-System",
         "demo": "",
-        "year": "2024",
-        "featured": true
+        "image": ""
       },
       {
-        "title": "Hotel Management System (C#)",
-        "description": "Desktop hotel management application built with C# and .NET, featuring comprehensive booking management, guest registration, room allocation, and billing systems. Designed for efficient hotel operations with intuitive user interface.",
-        "tech": ["C#", ".NET", "Windows Forms", "SQL Server", "Desktop App"],
-        "features": ["Guest management", "Room booking system", "Billing and invoicing", "Reservation tracking", "Admin dashboard"],
-        "github": "https://github.com/YasserAet/HOTEL-MANAGEMENT-APP-2",
+        "title": "REST Stack Performance Benchmark",
+        "tagline": "Measuring Trade-offs, Not Guessing",
+        "context": "A benchmark harness comparing how REST stack choices behave under load.",
+        "problem": "Stack decisions are often made on intuition rather than measured trade-offs.",
+        "built": "A benchmark that measures how REST stack choices affect latency, throughput, and resource use.",
+        "stack": ["JavaScript", "Node", "Benchmarking"],
+        "demonstrates": "Engineering rigor — measuring trade-offs instead of guessing.",
+        "status": "Completed",
+        "tags": ["Backend", "Performance"],
+        "confidential": false,
+        "github": "https://github.com/YasserAet/Performance-REST-Benchmark",
         "demo": "",
-        "year": "2022"
-      },
-      {
-        "title": "HMS – Hotel Management (Qt/C++)",
-        "description": "Cross-platform hotel management system developed with Qt and C++. Features advanced room management, guest services, billing operations, and reporting functionality. Includes comprehensive database integration and modern UI design.",
-        "tech": ["C++", "Qt", "QMake", "SQLite", "Cross-platform"],
-        "features": ["Room management", "Guest services", "Billing system", "Report generation", "Database integration", "Modern Qt UI"],
-        "github": "https://github.com/YasserAet/HMS",
-        "demo": "",
-        "year": "2022"
-      },
-      {
-        "title": "Gestion Salles – Room Booking System",
-        "description": "Web-based room and facility booking management system built with Laravel framework. Features user authentication, booking calendar, availability tracking, and administrative controls for managing multiple rooms and schedules.",
-        "tech": ["PHP", "Laravel", "JavaScript", "Blade", "MySQL", "Tailwind CSS"],
-        "features": ["Room booking system", "User authentication", "Availability calendar", "Admin dashboard", "Booking management", "Responsive design"],
-        "github": "https://github.com/YasserAet/Gestion_salles",
-        "demo": "",
-        "year": "2023"
+        "image": ""
       }
+    ],
+    "alsoBuilt": [
+      { "title": "RoadSense-MS — Road Analysis", "github": "https://github.com/YasserAet/RoadSense-MS" },
+      { "title": "Hotel Management (C#)", "github": "https://github.com/YasserAet/HOTEL-MANAGEMENT-APP-2" },
+      { "title": "HMS — Hotel Management (Qt/C++)", "github": "https://github.com/YasserAet/HMS" },
+      { "title": "School Timetable (PHP)", "github": "https://github.com/YasserAet/School_Timetable" },
+      { "title": "MQ-TESTS — Message Queues", "github": "https://github.com/YasserAet/MQ-TESTS" },
+      { "title": "NMAPGEN — Network Tooling", "github": "https://github.com/YasserAet/NMAPGEN" }
     ]
   },
   "education": {
     "title": "Education",
     "degrees": [
       {
-        "degree": "Engineering Cycle – MIAGE",
-        "institution": "Moroccan School of Engineering Sciences",
+        "degree": "Software Engineering Degree (Cycle d'Ingénieur)",
+        "institution": "EMSI — Moroccan School of Engineering Sciences",
         "period": "October 2023 – Present",
         "location": "Marrakech, Morocco",
-        "specialization": "DevOps, AI, Big Data, Software Architecture, Cloud Computing",
-        "description": "Pursuing advanced engineering degree with focus on modern software architectures and AI technologies."
+        "specialization": "Software Architecture, AI, Big Data, DevOps, Cloud Computing",
+        "description": "Final-year software engineering degree focused on modern software architecture and AI technologies."
       },
       {
         "degree": "VR Developer Diploma",
@@ -285,43 +400,51 @@
   "skills": {
     "title": "Skills & Expertise",
     "categories": {
-      "programming": {
-        "title": "Programming Languages",
-        "items": ["JavaScript", "TypeScript", "Python", "C#", "HTML5", "CSS3", "SQL"]
+      "ai": {
+        "title": "AI & LLM Engineering",
+        "items": ["LLM integration", "RAG", "AI agents", "Prompt engineering", "Embeddings", "Vector databases", "Structured outputs", "AI-assisted development", "Document automation"]
       },
-      "frontend": {
-        "title": "Frontend Development",
-        "items": ["React", "Next.js", "Vue.js", "Tailwind CSS", "GSAP", "Three.js", "Redux"]
+      "languages": {
+        "title": "Languages & Core",
+        "items": ["TypeScript", "JavaScript", "Python", "C", "C#", "Java", "C++", "PHP", "SQL", "OOP", "REST APIs", "Git"]
+      },
+      "fullstack": {
+        "title": "Full-Stack Web",
+        "items": ["React", "Vue.js", "Node.js", "Express", "Django", "Laravel", "HTML5", "CSS3", "Tailwind CSS", "MySQL", "MongoDB", "Dashboards", "Admin panels"]
+      },
+      "realtime3d": {
+        "title": "Real-Time 3D / Digital Twin",
+        "items": ["Unity", "Unreal Engine", "C#", "WebGL", "WebXR", "Three.js", "3D visualization", "Digital-twin interfaces", "MQTT/WebSocket concepts", "Blender", "Autodesk Maya", "3ds Max", "Cinema 4D", "Substance Painter", "ZBrush", "After Effects", "ARKit", "ARCore", "Vuforia"]
+      },
+      "vision": {
+        "title": "Computer Vision",
+        "items": ["Body/pose tracking", "Detection pipelines", "OpenCV", "MediaPipe", "Real-time CV integration"]
       },
       "backend": {
-        "title": "Backend Development",
-        "items": ["Node.js", "Express", "FastAPI", "Django", "REST APIs", "Microservices", "GraphQL"]
+        "title": "Backend & Systems",
+        "items": ["API design", "Performance benchmarking", "Message queues", "Enterprise architecture", "Parsing/compilation basics"]
       },
-      "xr": {
-        "title": "3D/XR Technologies",
-        "items": ["Unity", "Unreal Engine", "Blender", "3D Modeling", "VR Development", "AR Development"]
-      },
-      "database": {
-        "title": "Databases & Tools",
-        "items": ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis", "Docker"]
-      },
-      "tools": {
-        "title": "Tools & Platforms",
-        "items": ["Git", "GitHub", "VS Code", "Figma", "Postman", "Linux", "CI/CD"]
+      "devops": {
+        "title": "DevOps / Deploy",
+        "items": ["Git/GitHub", "GitHub Pages", "Docker", "Linux", "CI/CD"]
       }
     }
   },
   "contact": {
     "title": "Get In Touch",
-    "subtitle": "I'm always interested in hearing about new opportunities and collaborations.",
+    "subtitle": "For software engineering roles, AI / RAG projects, real-time & digital-twin work, computer-vision tools, or full-stack collaborations — reach out directly.",
+    "infoTitle": "Contact Information",
+    "connectTitle": "Connect With Me",
+    "formTitle": "Send Me a Message",
+    "downloadCV": "Download CV",
     "form": {
       "name": "Your Name",
       "email": "Your Email",
       "message": "Your Message",
       "send": "Send Message",
       "sending": "Sending...",
-      "success": "Message sent successfully!",
-      "error": "Failed to send message. Please try again."
+      "success": "Thanks — your message was sent. I'll get back to you soon.",
+      "error": "Something went wrong. Please email me directly instead."
     },
     "info": {
       "email": "yasseraitali@outlook.fr",

@@ -56,7 +56,7 @@ const Hero = () => {
 
   return (
     <>
-      {/* Professional Announcement Banner */}
+      {/* Value Banner */}
       <AnimatePresence>
         {isAnnouncementVisible && (
           <motion.div
@@ -66,59 +66,24 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="fixed top-28 md:top-32 left-0 right-0 z-40 pointer-events-none"
           >
-            <div className="max-w-5xl mx-auto px-4">
+            <div className="max-w-4xl mx-auto px-4">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="bg-gradient-to-r from-primary-600/95 via-primary-500/95 to-primary-600/95 backdrop-blur-sm rounded-xl shadow-2xl border border-primary-400/30 pointer-events-auto overflow-hidden"
+                className="bg-dark-800/80 backdrop-blur-md rounded-full shadow-xl border border-primary-500/20 pointer-events-auto overflow-hidden"
               >
-                <div className="relative">
-                  {/* Animated background stripe */}
-                  <motion.div
-                    animate={{ x: ['0%', '100%'] }}
-                    transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
-                    className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-transparent via-white/10 to-transparent"
-                  />
-                  
-                  {/* Close Button */}
+                <div className="relative flex items-center gap-3 px-5 py-2.5 pr-10">
+                  <span className="flex-shrink-0 w-2 h-2 rounded-full bg-primary-400 animate-pulse" />
+                  <p className="text-dark-200 text-xs md:text-sm text-center flex-1 leading-snug">
+                    {t('announcement.text')}
+                  </p>
                   <button
                     onClick={() => setIsAnnouncementVisible(false)}
-                    className="absolute top-2 right-2 p-1.5 rounded-full bg-white/20 hover:bg-white/30 text-white transition-colors z-10"
-                    aria-label="Close announcement"
+                    className="absolute top-1/2 right-2 -translate-y-1/2 p-1.5 rounded-full bg-white/5 hover:bg-white/15 text-dark-300 hover:text-white transition-colors"
+                    aria-label="Close banner"
                   >
-                    <X size={18} />
+                    <X size={16} />
                   </button>
-                  
-                  <div className="relative px-6 py-4 md:py-5 pr-10">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                      {/* Main announcement */}
-                      <div className="text-center md:text-left flex-1">
-                        <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
-                          <div className="px-3 py-1 bg-white/20 rounded-full">
-                            <span className="text-white text-xs font-bold uppercase tracking-wider">
-                              {t('announcement.badge')}
-                            </span>
-                          </div>
-                        </div>
-                        <h3 className="text-white font-bold text-xl md:text-2xl mb-1">
-                          {t('announcement.title')}
-                        </h3>
-                        <p className="text-primary-50 text-sm md:text-base">
-                          {t('announcement.details')}
-                        </p>
-                      </div>
-
-                      {/* CTA Button */}
-                      <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                        className="px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all whitespace-nowrap"
-                      >
-                        {t('announcement.cta')}
-                      </motion.button>
-                    </div>
-                  </div>
                 </div>
               </motion.div>
             </div>
@@ -164,20 +129,37 @@ const Hero = () => {
             {t('hero.title')}
           </h2>
 
-          {/* Subtitle */}
-          <p className="hero-text text-lg md:text-xl text-dark-300 max-w-3xl mx-auto leading-relaxed">
-            {t('hero.subtitle')}
+          {/* Tagline */}
+          <p className="hero-text text-lg md:text-2xl text-primary-400 font-medium tracking-wide">
+            {t('hero.tagline')}
           </p>
 
+          {/* Description */}
+          <p className="hero-text text-base md:text-lg text-dark-300 max-w-3xl mx-auto leading-relaxed">
+            {t('hero.description')}
+          </p>
+
+          {/* Capability Badges */}
+          <div className="hero-text flex flex-wrap items-center justify-center gap-2 md:gap-3 max-w-3xl mx-auto pt-2">
+            {(t('hero.badges', { returnObjects: true }) as string[]).map((badge) => (
+              <span
+                key={badge}
+                className="px-3 py-1.5 bg-primary-600/10 border border-primary-500/20 text-primary-300 rounded-full text-xs md:text-sm font-medium"
+              >
+                {badge}
+              </span>
+            ))}
+          </div>
+
           {/* CTA Buttons */}
-          <div className="hero-text flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
+          <div className="hero-text flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(14, 165, 233, 0.5)' }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToProjects}
               className="px-8 py-4 bg-primary-600 hover:bg-primary-500 text-white rounded-full font-semibold text-lg transition-all shadow-lg"
             >
-              {t('hero.cta')}
+              {t('hero.viewWork')}
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -185,7 +167,7 @@ const Hero = () => {
               onClick={scrollToContact}
               className="px-8 py-4 glass-effect hover:bg-white/10 text-white rounded-full font-semibold text-lg transition-all"
             >
-              {t('hero.contact')}
+              {t('hero.discuss')}
             </motion.button>
             <motion.a
               href={i18n.language === 'fr' ? '/CV_Yassir_Aitali_FR.pdf' : '/CV_Yassir_Aitali_EN.pdf'}
@@ -198,6 +180,11 @@ const Hero = () => {
               {t('hero.downloadCV')}
             </motion.a>
           </div>
+
+          {/* Discreet availability line */}
+          <p className="hero-text text-sm text-dark-400 max-w-2xl mx-auto pt-2">
+            {t('hero.availability')}
+          </p>
         </div>
       </div>
 
