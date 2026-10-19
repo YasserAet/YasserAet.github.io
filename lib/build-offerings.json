@@ -1,0 +1,166 @@
+[
+  {
+    "id": "ai",
+    "items": [
+      [
+        "AI-enabled features & API integrations",
+        "Fonctionnalités IA & intégrations API"
+      ],
+      [
+        "Python automation & data-processing workflows",
+        "Automatisation Python & traitement de données"
+      ],
+      [
+        "Computer-vision detection systems",
+        "Systèmes de détection par vision par ordinateur"
+      ],
+      [
+        "Body & pose-tracking applications",
+        "Applications de suivi corporel & de pose"
+      ],
+      [
+        "Live AI dashboards & monitoring interfaces",
+        "Dashboards IA & interfaces de suivi temps réel"
+      ],
+      [
+        "Event-driven AI-to-application pipelines",
+        "Pipelines événementiels reliant IA & applications"
+      ],
+      [
+        "Document search & Q&A / RAG",
+        "Recherche & questions-réponses documentaires / RAG"
+      ],
+      [
+        "Source-grounded document summaries",
+        "Résumés documentaires sourcés"
+      ]
+    ]
+  },
+  {
+    "id": "fullstack",
+    "items": [
+      [
+        "Full-stack web applications & startup MVPs",
+        "Applications web full stack & MVPs de startups"
+      ],
+      [
+        "Java applications & object-oriented services",
+        "Applications Java & services orientés objet"
+      ],
+      [
+        "Spring Cloud microservice architectures",
+        "Architectures de microservices Spring Cloud"
+      ],
+      [
+        "Internal business tools & admin dashboards",
+        "Outils métier internes & dashboards administrateurs"
+      ],
+      [
+        "Customer portals & business-management apps",
+        "Portails clients & applications de gestion métier"
+      ],
+      [
+        "Booking, scheduling & management interfaces",
+        "Interfaces de réservation, planning & gestion"
+      ],
+      [
+        "Responsive websites & product interfaces",
+        "Sites responsive & interfaces produit"
+      ],
+      [
+        "REST / GraphQL APIs & external integrations",
+        "APIs REST / GraphQL & intégrations externes"
+      ],
+      [
+        "Live dashboards & WebSocket applications",
+        "Dashboards temps réel & applications WebSocket"
+      ],
+      [
+        "Database-backed backends & data workflows",
+        "Backends reliés aux bases de données & workflows de données"
+      ],
+      [
+        "Distributed services & asynchronous messaging",
+        "Services distribués & messagerie asynchrone"
+      ]
+    ]
+  },
+  {
+    "id": "devops",
+    "items": [
+      [
+        "Docker & Docker Compose environments",
+        "Environnements Docker & Docker Compose"
+      ],
+      [
+        "Kubernetes & OpenShift application environments",
+        "Environnements applicatifs Kubernetes & OpenShift"
+      ],
+      [
+        "Git workflows & release organization",
+        "Workflows Git & organisation des livraisons"
+      ],
+      [
+        "GitHub CI/CD build & deployment pipelines",
+        "Pipelines GitHub CI/CD de build & déploiement"
+      ],
+      [
+        "Linux application deployment & updates",
+        "Déploiement & mises à jour applicatives sous Linux"
+      ],
+      [
+        "Cloud deployment & service integration",
+        "Déploiement Cloud & intégration de services"
+      ],
+      [
+        "Application logs & operational monitoring",
+        "Logs applicatifs & supervision opérationnelle"
+      ],
+      [
+        "Build, compression & asset-delivery optimization",
+        "Optimisation des builds, de la compression & de la livraison des assets"
+      ],
+      [
+        "API performance benchmarks & backend checks",
+        "Benchmarks de performance API & vérifications backend"
+      ]
+    ]
+  },
+  {
+    "id": "xr",
+    "items": [
+      [
+        "Interactive 3D web viewers & property explorers",
+        "Visualiseurs 3D web & explorateurs immobiliers interactifs"
+      ],
+      [
+        "Real-estate virtual tours & unit navigation",
+        "Visites immobilières virtuelles & navigation entre unités"
+      ],
+      [
+        "Digital-twin supervision interfaces",
+        "Interfaces de supervision de jumeaux numériques"
+      ],
+      [
+        "Unity WebGL & VR applications",
+        "Applications Unity WebGL & VR"
+      ],
+      [
+        "Interactive product & spatial visualizations",
+        "Visualisations interactives de produits & d’espaces"
+      ],
+      [
+        "Sensor-driven 3D & live-data experiences",
+        "Expériences 3D reliées aux capteurs & aux données temps réel"
+      ],
+      [
+        "Body-tracking & movement-driven interactions",
+        "Interactions par suivi corporel & mouvement"
+      ],
+      [
+        "Blender-to-web / Unity asset pipelines",
+        "Pipelines d’assets Blender vers le web / Unity"
+      ]
+    ]
+  }
+]

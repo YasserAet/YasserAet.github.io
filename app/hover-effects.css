@@ -1,0 +1,21 @@
+/* Aaftab reference: circle-fill navigation with rolling labels. */
+nav[aria-label=Primary] a,nav[aria-label=Primary] a:hover,nav[aria-label=Primary] a[aria-current=page]{background:transparent;color:var(--color-paper)}
+.reference-pill-circle{background:var(--color-paper);transform:translateX(-50%) scale(0);pointer-events:none;will-change:transform}
+.pill-label,.pill-label-hover{display:inline-block;will-change:transform,opacity}
+.pill-label-hover{color:var(--color-ink);opacity:0;transform:translateY(136px)}
+nav[aria-label=Primary] a[data-pill-active=true] .bg-brand-500{background:var(--color-ink)}
+/* Directional reveal and counter-translation are animated by the hover module. */
+.work-row{isolation:isolate}
+.work-row>a,.work-row:hover>a,.work-row:focus-within>a{z-index:1;opacity:1!important;color:var(--color-paper)!important;background:transparent}
+.work-row:focus-within{outline:2px solid var(--color-mist);outline-offset:-2px}
+.work-marquee{z-index:2;translate:0 0!important;transform:translateY(101%);background:var(--color-brand-500)!important;will-change:transform}
+.work-marquee-offset{width:max-content;height:100%;will-change:transform}
+.work-marquee-track{height:100%;width:max-content;display:flex;animation:referenceWorkTicker 18s linear infinite;will-change:transform}
+.work-marquee .marquee-part{color:var(--color-ink)!important}
+.work-marquee .bg-cover{border:1px solid color-mix(in srgb,var(--palette-navy) 20%,transparent)}
+[data-magnet-inner]{will-change:transform}
+.reference-variable-name{font-weight:300!important}
+.reference-variable-letter{display:inline-block;font-variation-settings:'wght' 300}
+@keyframes referenceWorkTicker{to{transform:translateX(calc(-1 * var(--ticker-width,25%)))}}
+@media(hover:none){.work-marquee{display:none}}
+@media(prefers-reduced-motion:reduce){.work-marquee-track{animation:none!important}.reference-variable-name,.reference-variable-letter{font-weight:600!important;font-variation-settings:'wght' 600!important}[data-magnet-inner]{transform:none!important}}

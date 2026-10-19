@@ -1,0 +1,162 @@
+[
+  {
+    "date": "2026",
+    "dateFr": "2026",
+    "company": "DICE / UM6P",
+    "location": "Benguerir, Morocco",
+    "locationFr": "Benguerir, Maroc",
+    "role": "Software Engineer · Backend & Distributed Systems",
+    "roleFr": "Ingénieur logiciel · Backend & systèmes distribués",
+    "context": "Final-year engineering project: a distributed digital-twin platform connecting backend services, live data and supervision interfaces.",
+    "contextFr": "Projet de fin d’études : une plateforme distribuée de jumeau numérique reliant services backend, données temps réel et interfaces de supervision.",
+    "contributions": [
+      [
+        "Designed the architecture connecting backend services, databases, APIs and the virtual supervision environment.",
+        "Conception de l’architecture reliant services backend, bases de données, APIs et environnement virtuel de supervision."
+      ],
+      [
+        "Developed Python / FastAPI services integrating PostgreSQL, Redis, Kafka and MQTT.",
+        "Développement de services Python / FastAPI intégrant PostgreSQL, Redis, Kafka et MQTT."
+      ],
+      [
+        "Connected asynchronous data flows through GraphQL and WebSocket interfaces, with attention to reliable and consistent state.",
+        "Connexion des flux asynchrones via GraphQL et WebSocket, avec une attention portée à la fiabilité et à la cohérence des états."
+      ],
+      [
+        "Mapped physical zones to virtual entities and integrated Unity supervision, with technical documentation and a modular project structure.",
+        "Correspondance entre zones physiques et entités virtuelles, intégration de la supervision Unity, documentation technique et structure modulaire du projet."
+      ]
+    ],
+    "stack": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Redis",
+      "Kafka",
+      "MQTT",
+      "GraphQL",
+      "WebSocket",
+      "Unity"
+    ],
+    "project": "twin"
+  },
+  {
+    "date": "January 2026",
+    "dateFr": "Janvier 2026",
+    "company": "Al-Moftah Real Estate",
+    "location": "Muscat, Oman",
+    "locationFr": "Mascate, Oman",
+    "role": "Full-Stack · 3D & VR Developer",
+    "roleFr": "Développeur full stack · 3D & VR",
+    "context": "An interactive property platform bringing web interfaces, business information and immersive visualization into the same application.",
+    "contextFr": "Une plateforme immobilière interactive associant interfaces web, informations métier et visualisation immersive dans une même application.",
+    "contributions": [
+      [
+        "Developed frontend interfaces, application logic and business-data integration with backend services.",
+        "Développement des interfaces frontend, de la logique applicative et de l’intégration des données métier aux services backend."
+      ],
+      [
+        "Integrated Three.js / WebGL and VR / WebXR property exploration.",
+        "Intégration de l’exploration immobilière Three.js / WebGL et VR / WebXR."
+      ],
+      [
+        "Prepared and integrated Blender / glTF assets, with dynamic loading and build / asset delivery optimization.",
+        "Préparation et intégration des assets Blender / glTF, chargement dynamique et optimisation des builds et de la livraison des assets."
+      ],
+      [
+        "Contributed to cloud integration and deployment, with GitHub CI/CD workflows.",
+        "Contribution à l’intégration et au déploiement Cloud, avec des workflows GitHub CI/CD."
+      ]
+    ],
+    "stack": [
+      "React",
+      "TypeScript",
+      "Three.js",
+      "WebGL",
+      "WebXR",
+      "Blender / glTF",
+      "GitHub CI/CD",
+      "Cloud deployment"
+    ],
+    "project": "keyone"
+  },
+  {
+    "date": "August 2023",
+    "dateFr": "Août 2023",
+    "company": "UM6P Vanguard Center",
+    "location": "Benguerir, Morocco",
+    "locationFr": "Benguerir, Maroc",
+    "role": "XR / AI Developer",
+    "roleFr": "Développeur XR / IA",
+    "context": "A real-time computer-vision pipeline connecting a camera feed to an interactive Unity WebGL application.",
+    "contextFr": "Un pipeline de vision par ordinateur temps réel reliant une caméra à une application Unity WebGL interactive.",
+    "contributions": [
+      [
+        "Processed pose and body-tracking data using Python and MediaPipe.",
+        "Traitement des données de pose et de suivi corporel avec Python et MediaPipe."
+      ],
+      [
+        "Transmitted continuous tracking data through Node.js / WebSocket to Unity, with normalization and filtering.",
+        "Transmission des données continues via Node.js / WebSocket vers Unity, avec normalisation et filtrage."
+      ],
+      [
+        "Structured the integration as a modular event-driven system and optimized Unity WebGL rendering.",
+        "Structuration de l’intégration en système modulaire événementiel et optimisation du rendu Unity WebGL."
+      ],
+      [
+        "Deployed the application to UM6P’s cloud for internal testing.",
+        "Déploiement de l’application dans le Cloud de l’UM6P pour des tests internes."
+      ]
+    ],
+    "stack": [
+      "Python",
+      "MediaPipe",
+      "Node.js",
+      "WebSocket",
+      "Unity",
+      "C#",
+      "WebGL"
+    ],
+    "project": "pose"
+  },
+  {
+    "date": "August 2021",
+    "dateFr": "Août 2021",
+    "company": "SEOCOM",
+    "location": "Marrakech, Morocco",
+    "locationFr": "Marrakech, Maroc",
+    "role": "Full-Stack Developer",
+    "roleFr": "Développeur full stack",
+    "context": "Full-stack web development together with the practical work of deploying, maintaining and monitoring applications.",
+    "contextFr": "Développement web full stack associé au déploiement, à la maintenance et à la supervision des applications.",
+    "contributions": [
+      [
+        "Built PHP / JavaScript / MySQL web applications and structured REST APIs using an MVC architecture.",
+        "Développement d’applications web PHP / JavaScript / MySQL et d’APIs REST structurées selon une architecture MVC."
+      ],
+      [
+        "Optimized SQL queries, backend data handling and lightweight processing pipelines.",
+        "Optimisation des requêtes SQL, du traitement backend et de pipelines de données légers."
+      ],
+      [
+        "Used Git branching, Linux server deployment and basic update automation.",
+        "Utilisation des branches Git, du déploiement sur serveurs Linux et d’une automatisation simple des mises à jour."
+      ],
+      [
+        "Worked on application reliability through monitoring, logging and load optimization.",
+        "Amélioration de la fiabilité via la supervision, les logs et l’optimisation de charge."
+      ]
+    ],
+    "stack": [
+      "PHP",
+      "JavaScript",
+      "MySQL",
+      "REST",
+      "MVC",
+      "Git",
+      "Linux",
+      "Logging / monitoring"
+    ],
+    "project": "delivery"
+  }
+]

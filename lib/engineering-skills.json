@@ -1,0 +1,86 @@
+[
+  {
+    "title": "AI engineering & computer vision",
+    "titleFr": "Ingénierie IA & vision par ordinateur",
+    "tools": "Python / MediaPipe / OpenCV / FastAPI / Embeddings / ChromaDB",
+    "desc": "Computer vision, AI application integration and document intelligence / RAG.",
+    "descFr": "Vision par ordinateur, intégration applicative de l’IA et intelligence documentaire / RAG."
+  },
+  {
+    "title": "Java & object-oriented engineering",
+    "titleFr": "Java & ingénierie orientée objet",
+    "tools": "Java / OOP / Spring Cloud / Microservices",
+    "desc": "Object-oriented software design, Java development and Spring Cloud microservices.",
+    "descFr": "Conception logicielle orientée objet, développement Java et microservices Spring Cloud."
+  },
+  {
+    "title": "Languages & core",
+    "titleFr": "Langages & fondamentaux",
+    "tools": "Java / Python / TypeScript / JavaScript / C# / PHP / SQL",
+    "desc": "A broad programming foundation for backend, web and interactive applications.",
+    "descFr": "Des bases de programmation étendues pour les applications backend, web et interactives."
+  },
+  {
+    "title": "Full-stack interfaces",
+    "titleFr": "Interfaces full stack",
+    "tools": "React / Next.js / Vue.js / TypeScript / HTML / CSS / Tailwind CSS",
+    "desc": "Responsive product interfaces, internal tools, dashboards and business applications.",
+    "descFr": "Interfaces produit responsive, outils internes, dashboards et applications métier."
+  },
+  {
+    "title": "Backend frameworks",
+    "titleFr": "Frameworks backend",
+    "tools": "Spring Cloud / FastAPI / Node.js / Express / Django / Laravel",
+    "desc": "Application logic, modular services and data-backed web systems.",
+    "descFr": "Logique applicative, services modulaires et systèmes web reliés aux données."
+  },
+  {
+    "title": "APIs & integration",
+    "titleFr": "APIs & intégration",
+    "tools": "REST / GraphQL / WebSocket / Postman / API contracts",
+    "desc": "APIs, service integration, request validation and real-time application communication.",
+    "descFr": "APIs, intégration de services, validation des requêtes et communication applicative temps réel."
+  },
+  {
+    "title": "Databases & data modeling",
+    "titleFr": "Bases de données & modélisation",
+    "tools": "SQL / PostgreSQL / MySQL / MongoDB / Redis / SQLite / InfluxDB",
+    "desc": "Relational data, document stores, caching, queries and time-series information.",
+    "descFr": "Données relationnelles, documents, cache, requêtes et séries temporelles."
+  },
+  {
+    "title": "Architecture & messaging",
+    "titleFr": "Architecture & messagerie",
+    "tools": "OOP / MVC / Modular design / Distributed systems / Kafka / MQTT / Node-RED",
+    "desc": "Maintainable application structure, asynchronous processing and event-driven data flows.",
+    "descFr": "Structure applicative maintenable, traitement asynchrone et flux de données événementiels."
+  },
+  {
+    "title": "DevOps, containers & delivery",
+    "titleFr": "DevOps, conteneurs & livraison",
+    "tools": "Docker / Docker Compose / Kubernetes / OpenShift / Git / GitHub CI/CD / Linux",
+    "desc": "Container tooling, reproducible environments, build pipelines and application deployment.",
+    "descFr": "Outils de conteneurisation, environnements reproductibles, pipelines de build et déploiement applicatif."
+  },
+  {
+    "title": "Quality, debugging & performance",
+    "titleFr": "Qualité, débogage & performance",
+    "tools": "API validation / Debugging / Logging / Monitoring / Benchmarking / Documentation",
+    "desc": "Inspect behavior, diagnose issues, measure backend performance and document the system.",
+    "descFr": "Vérifier le comportement, diagnostiquer les problèmes, mesurer les performances et documenter le système."
+  },
+  {
+    "title": "Real-time 3D & asset pipelines",
+    "titleFr": "3D temps réel & pipelines d’assets",
+    "tools": "Unity / C# / Three.js / WebGL / WebXR / Blender / glTF",
+    "desc": "Digital twins, interactive visualization, immersive applications and 3D integration.",
+    "descFr": "Jumeaux numériques, visualisation interactive, applications immersives et intégration 3D."
+  },
+  {
+    "title": "Education & technical training",
+    "titleFr": "Formation & apprentissage technique",
+    "tools": "EMSI MIAGE / UM6P VR Innovation Academy / Java & OOP / Spring Cloud / Docker / Kubernetes / OpenShift",
+    "desc": "Software engineering, Java, cloud-native containers and immersive-development training.",
+    "descFr": "Formation en ingénierie logicielle, Java, conteneurs cloud native et développement immersif."
+  }
+]

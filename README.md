@@ -1,125 +1,96 @@
 # Yassir Aitali — Portfolio
 
-**Software Engineer — AI · Full-Stack · Real-Time 3D & Digital Twins**
-
-A bilingual (EN/FR), dark-themed portfolio positioning Yassir Aitali as a software engineer working across AI-enabled applications, full-stack web platforms, and real-time 3D / digital-twin interfaces. Built as a single-page React app and deployed to GitHub Pages.
-
----
-
-## Tech stack
-
-- **Vite** + **React 18** + **TypeScript**
-- **Tailwind CSS** for styling
-- **Framer Motion** + **GSAP** (ScrollTrigger) for animation
-- **i18next** / **react-i18next** for full English / French support
-- **lucide-react** icons
-- **react-intersection-observer** for scroll-triggered reveals
-- Deployed via **GitHub Pages**
-
-## Site sections
-
-`Hero → About → Experience → Education → Certificates → What I Build → Selected Work (case studies + "Also built" strip) → Skills → Contact → Footer`
-
-- **Hero** — headline, capability badges, CTAs, discreet availability line.
-- **About** — engineer bio + a "Snapshot" card (role, PFE, location, languages).
-- **Experience** — timeline, led by the PFE at UM6P DICE.
-- **What I Build** — four capability cards (AI, Full-Stack, Real-Time 3D, Computer Vision).
-- **Selected Work** — featured projects as structured case studies (Context · Problem · What I built · Stack · What it demonstrates · Status · Links + tag chips), plus a compact "Also built" strip.
-- **Skills** — grouped by capability.
-- **Contact** — Email / LinkedIn / GitHub / Download CV buttons, plus an optional Formspree-backed form.
+This version adapts the actual HTML and CSS from the supplied Aaftab website snapshot. It retains the full-width hero, floating pill navigation, sticky expertise index, editorial rows, project hover marquees and large two-line footer. Identity, professional content and palette are adapted to Yassir.
 
 ## Run locally
 
-```bash
-npm install
-npm run dev      # starts Vite dev server on http://localhost:3000
+Node.js 22.13+ and the package-manager version declared in package.json:
+
+```sh
+corepack enable
+pnpm install
+pnpm dev
 ```
 
-Other scripts:
+Build the deployable static site:
 
-```bash
-npm run build    # type-checks (tsc) then builds to dist/
-npm run preview  # preview the production build locally
-npm run lint     # eslint
+```sh
+pnpm build
 ```
 
-## Contact form (optional)
+The output is `out/`. The ZIP also includes the same ready-built files in `READY-TO-UPLOAD/`. Upload that folder's contents to static hosting. Use an HTTP server to view the build locally; opening index.html by double-click does not support ES modules reliably.
 
-The contact form posts to [Formspree](https://formspree.io). Configure it via an env var:
+The included GitHub Actions workflow deploys `main` to GitHub Pages. Choose **Settings → Pages → Source → GitHub Actions** in the repository. Paths are configured for a root user site, such as `YasserAet.github.io`. No changes have been pushed to the user's existing GitHub repository.
 
-1. Copy `.env.example` to `.env`.
-2. Set `VITE_FORMSPREE_ENDPOINT` to your Formspree endpoint (e.g. `https://formspree.io/f/xxxxxxxx`).
+## Edit the site
 
-If the variable is **not** set, the form is hidden and the page shows the direct
-Email / LinkedIn / GitHub buttons only — the form never shows a fake "message sent".
+- `app/portfolio.tsx`: reference-page interactions, language switch, project dialogs and gallery presentation.
+- `lib/reference-markup.json`: the adapted page markup used by the site.
+- `app/reference-layout.css`: the original reference stylesheet, retained unchanged.
+- `app/reference-fonts.css`: the supplied font declarations with local asset paths.
+- `app/globals.css`: semantic palette, interaction restoration and gallery styling.
+- `app/ecosystem-effects.css`: wrapping technology summaries, ecosystem row hover arrows and target-cursor styling.
+- `lib/ecosystem-cursor.ts`: scoped target-cursor tracking, hover locking and cleanup.
+- `lib/experience-timeline.json`: bilingual full professional history, detailed contributions, technologies and related case-study links.
+- `lib/engineering-skills.json`: twelve bilingual skill categories, including a dedicated Java / OOP / Spring Cloud row and expanded Kubernetes / OpenShift, backend, architecture, database and quality tooling.
+- `lib/build-offerings.json`: 36 bilingual, market-informed “What I build” offerings across AI (8), full-stack (11), DevOps (9), and XR (8).
+- `lib/selected-work.json`: the eight main work entries, order and bilingual visible summaries.
+- `lib/project-galleries.ts`: thirteen case studies, technical contributions, pipeline summaries, screenshots and preview clips.
+- `public/media/`: 19 optimized images and two short video previews.
+- `lib/media-provenance.json`: which supplied image/video produced each media asset.
+- `public/cv/`: the latest two supplied CV PDFs, unchanged.
+- `scripts/adapt-reference.py`: reproducible adaptation from `design-reference/`; regenerates the markup and reference CSS. Requires Python and lxml. Edit the generator when you want its changes to survive regeneration.
 
-> `.env` is git-ignored; never commit your real endpoint.
+The supplied archive is a saved website snapshot, not the original editable React component repository. The page markup and stylesheet are reused directly. Menu, section tracking, capability index, hover interactions, project galleries and dialogs are implemented locally without running the reference's compiled application scripts. Internal links target working portfolio sections and galleries.
 
-## Internationalization
+## Media
 
-All copy lives in:
+The main work section foregrounds backend, full-stack, DevOps and AI engineering: the digital-twin backend, SEOCOM delivery, OPTIPARK, computer-vision body tracking, document intelligence / RAG, KEY ONE, REST benchmarking and KEY TWO. Each row has a visible bilingual summary and opens a case study. DevOps contributions are attributed to the supplied experience descriptions rather than presented as an invented standalone project. The archive adds NOTRAFIC, blockchain verification, VR, IDC and 3D workflow and six more repository links. Engineering case studies show real technical contributions and system stages; project screenshots are only used where supplied. Images are actual frames from the supplied recordings or supplied development captures, resized and encoded as WebP. No generated project illustrations are used. Images can be opened at their exported resolution. KEY ONE and KEY TWO also include short, muted, user-controlled preview clips.
 
-- `src/i18n/locales/en.json`
-- `src/i18n/locales/fr.json`
+Palette: Navy `#2F4156`, Teal `#567C8D`, Sky Blue `#C8D9E6`, Beige `#F5EFEB`, White `#FFFFFF`. Navy is the primary surface; beige/white and sky provide readable text. Sky primary buttons use navy lettering.
 
-Both files share identical keys. Components read text via `t('key')` /
-`t('key', { returnObjects: true })` — there are no hardcoded section strings.
-**Any text change must be made in both files.**
+## AI status
 
-## Build & deploy (GitHub Pages)
+The current publication and static build do not include the keyword chatbot. A real AI provider and server-side credentials still need to be selected and connected. No API key is embedded in the site. Earlier server-related source files are not deployed by the current static hosting configuration. The current site makes no inference requests.
 
-`vite.config.ts` uses `base: '/'` for a user/organization site
-(`https://<user>.github.io/`). If you deploy as a **project** site
-(`https://<user>.github.io/<repo>/`), change `base` to `'/<repo>/'`.
+## Validation
 
-Build and publish the `dist/` folder:
+TypeScript checks and the production static build passed. Markup checks cover identity replacement, unique section IDs, navigation destinations, downloadable files, eight header-navigation links, removal of the fixed section sidebar, four expertise sections (AI, full stack, DevOps, immersive) and eight project marquee rows with thirteen working case-study destinations. Media validation covers all nineteen images and both video previews. The reference stylesheet was checked byte-for-byte against the supplied archive. Browser visual QA was unavailable; visual equivalence has not been independently verified in a browser.
 
-```bash
-npm run build
-```
+## Reference hover interactions
 
-Then either:
+The fixed right-hand section sidebar has been removed. The header and mobile navigation remain. Hover behavior is restored from the supplied compiled reference: circular menu fills with rolling labels (300 ms entry / 200 ms exit), magnetic CTA buttons (60 px proximity, displacement divided by five), and project marquee panels entering and exiting through the nearest top or bottom edge (600 ms, 18-second continuous ticker). The footer name varies its font weight from 300 to 900 within a 220 px cursor radius. Existing underline and circular-arrow effects use the retained reference stylesheet. Keyboard focus receives the menu/project effects, and reduced-motion settings disable continuous movement and magnetic displacement.
 
-- Push `dist/` to the `gh-pages` branch (e.g. with the `gh-pages` package), **or**
-- Use a GitHub Actions workflow that builds and deploys `dist/` to Pages.
+## Full-stack and DevOps emphasis
 
-`public/.nojekyll` is included so GitHub Pages serves Vite's `_`-prefixed assets.
+Hero, introduction, expertise order, technology categories, experience descriptions and page metadata prioritize full-stack, backend and DevOps. Details are grounded in the supplied software CV and original portfolio: Docker / Docker Compose skills, SEOCOM Git / Linux / update automation, Al-Moftah cloud integration and GitHub CI/CD, API development, database work and REST benchmarking. Kubernetes and OpenShift appear in the skills and offerings; no new employment or production project is invented. The retained reference hover behavior applies to all eight featured rows. New work summaries and case-study technical sections stack on mobile.
 
-## Project structure
+## AI engineering positioning
 
-```
-.
-├── index.html              # SEO meta, Open Graph & Twitter Card tags
-├── public/                 # static assets served at site root
-│   ├── CV_Yassir_Aitali_EN.pdf
-│   ├── CV_Yassir_Aitali_FR.pdf
-│   └── ...certificate images, .nojekyll
-├── src/
-│   ├── App.tsx             # section composition
-│   ├── main.tsx            # entry + i18n init
-│   ├── i18n/
-│   │   ├── config.ts
-│   │   └── locales/{en,fr}.json
-│   └── components/
-│       ├── Navigation.tsx  Hero.tsx  About.tsx  WhatIBuild.tsx
-│       ├── Experience.tsx  Education.tsx  Certificates.tsx
-│       ├── Projects.tsx    Skills.tsx  Contact.tsx  Footer.tsx
-│       └── ScrollProgress.tsx
-├── vite.config.ts
-└── tailwind.config.js
-```
+The hero identifies Yassir as an AI & Software Engineer, with computer vision, full-stack and DevOps focus. AI engineering has a dedicated first expertise block; OPTIPARK, body tracking and document intelligence / RAG appear in the main work list. AI experience is grounded in the supplied computer-vision pipelines, application integration and academic AI work. RAG uses neutral exploration wording, and no new employment history, production LLM launch, model-training results or performance metrics are claimed. This content update does not implement or connect an AI API.
 
-## Screenshots
+## Expanded build offerings
 
-> Add real screenshots to `public/` and reference them here and in the project
-> case studies (`projects.featured[].image` in the locale files).
+The expertise lists now contain 36 concrete deliverables instead of 12. They use two columns where space permits and one column on small screens, retaining the original bullet-rule treatment. The generator creates as many list items as the content requires; it no longer truncates each group to the three items in the supplied template. The repeated status labels have been removed; document intelligence is described as an exploration. Market evidence, scope limits and the mapping to the supplied experience are recorded in `docs/market-positioning-2026-10-19.md`.
 
-| Hero | Selected Work |
-| --- | --- |
-| _add screenshot_ | _add screenshot_ |
+## Java and broader software skills
 
-## Contact
+Java is foregrounded in the hero, technology marquee, full-stack expertise, build offerings and a dedicated skills row. Spring Cloud and container training already appear in the supplied original portfolio. The skills map now includes twelve bilingual categories. The public page removes repeated English and French progress labels, using neutral project-focus descriptions without claiming a new completed RAG product. Source-history JSON files retain the original supplied content.
 
-- **Email:** yasseraitali@outlook.fr
-- **LinkedIn:** https://www.linkedin.com/in/aitali-yassir/
-- **GitHub:** https://github.com/YasserAet
+## Local clock
+
+Both hero and footer clocks use `Africa/Casablanca` through Intl, refreshed every minute. The footer reads “HH:MM · Morocco time” (French: “HH:MM · Heure au Maroc”). The saved reference’s nested placeholder is replaced as a whole so the clock is initialized correctly. Static fallback text is descriptive, never `--:--`.
+
+## Full timeline destination
+
+“Read the full timeline” and “See where I’ve been” now target `#full-timeline`, a separate disclosure after the short experience snapshot. It opens four detailed professional entries with dates, locations, role context, four contributions each, technologies and related case studies. Direct fragment links and browser history reveal the details automatically. The header Experience link continues to target the concise snapshot.
+
+## Ecosystem, navigation and palette refresh
+
+The desktop and mobile navbar brands are bold text only. The oversized repeated ecosystem bands are replaced by three compact wrapping technology groups; the hero has a single wrapping technology list. Twelve ecosystem rows retain their content and link to the relevant expertise or resume. They include the supplied reference’s circular fill / rotating-arrow treatment, plus a locally reconstructed four-corner target cursor that rotates while free and locks onto hovered rows. The reference’s dynamic cursor module was not included in the saved HTML/CSS, so the new cursor recreates the behavior rather than claiming identical original runtime code. It is scoped to the ecosystem and disabled for touch and reduced motion; keyboard focus receives visible row and arrow states. Browser visual verification remains unavailable.
+
+Computed palette contrast: sky / navy 7.22:1, beige / navy 9.16:1, white / navy 10.44:1. These verify the specified flat color pairs only, not every rendered state or full accessibility compliance.
+
+## Navbar scroll background
+
+The complete desktop navigation strip and mobile header gain a navy-tinted background, 24 px backdrop blur, subtle lower border and shadow after 16 px of scrolling. This covers both the name and menu. The existing scroll handler initializes the state on load and updates it on scroll / resize. Browsers without backdrop-filter support receive a solid navy fallback.

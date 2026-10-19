@@ -1,0 +1,82 @@
+[
+  {
+    "id": "twin",
+    "title": "Digital twin",
+    "label": "01 / Backend · Distributed systems",
+    "labelFr": "01 / Backend · Systèmes distribués",
+    "desc": "DICE / UM6P · FastAPI services, PostgreSQL, Redis and asynchronous data flows with Kafka, MQTT, GraphQL and WebSocket.",
+    "descFr": "DICE / UM6P · Services FastAPI, PostgreSQL, Redis et flux asynchrones avec Kafka, MQTT, GraphQL et WebSocket.",
+    "img": "pfe-hall.webp",
+    "signal": "FastAPI / Kafka / PostgreSQL"
+  },
+  {
+    "id": "delivery",
+    "title": "Full-stack delivery",
+    "label": "02 / Full stack · DevOps",
+    "labelFr": "02 / Full stack · DevOps",
+    "desc": "SEOCOM · PHP, JavaScript and MySQL applications, MVC / REST APIs, Git workflows, Linux deployment, logging and update automation.",
+    "descFr": "SEOCOM · Applications PHP, JavaScript et MySQL, MVC / APIs REST, workflows Git, déploiement Linux, logs et automatisation des mises à jour.",
+    "img": null,
+    "signal": "REST / SQL / Git / Linux"
+  },
+  {
+    "id": "optipark",
+    "title": "OPTIPARK",
+    "label": "03 / AI / Computer vision · Full-stack dashboard",
+    "labelFr": "03 / IA / Vision par ordinateur · Dashboard full stack",
+    "desc": "A three-tier smart-parking prototype: Python / OpenCV detection, a Node.js API and a Vue dashboard connected over WebSocket.",
+    "descFr": "Un prototype de parking à trois couches : détection Python / OpenCV, API Node.js et dashboard Vue reliés par WebSocket.",
+    "img": null,
+    "signal": "Python → Node.js → Vue"
+  },
+  {
+    "id": "pose",
+    "title": "Body tracking",
+    "label": "04 / AI / Computer vision · Real-time integration",
+    "labelFr": "04 / IA / Vision par ordinateur · Intégration temps réel",
+    "desc": "UM6P Vanguard · Python / MediaPipe processing, Node.js / WebSocket transport and Unity WebGL rendering, deployed for internal cloud testing.",
+    "descFr": "UM6P Vanguard · Traitement Python / MediaPipe, transport Node.js / WebSocket et rendu Unity WebGL, déployés pour des tests internes dans le Cloud.",
+    "img": null,
+    "signal": "MediaPipe → WebSocket → Unity"
+  },
+  {
+    "id": "rag",
+    "title": "Document intelligence",
+    "label": "05 / AI / Document intelligence & RAG",
+    "labelFr": "05 / IA / Intelligence documentaire & RAG",
+    "desc": "A document-intelligence exploration focused on document upload, embeddings, retrieval and source-grounded answers with Next.js, FastAPI and ChromaDB.",
+    "descFr": "Une exploration de l’intelligence documentaire centrée sur l’import de documents, les embeddings, la recherche et les réponses sourcées avec Next.js, FastAPI et ChromaDB.",
+    "img": null,
+    "signal": "Documents / Embeddings / Retrieval"
+  },
+  {
+    "id": "keyone",
+    "title": "KEY ONE",
+    "label": "06 / Full stack · Cloud delivery · 3D web",
+    "labelFr": "06 / Full stack · Déploiement Cloud · Web 3D",
+    "desc": "Al-Moftah · Web interfaces, application logic and business data with interactive property exploration, cloud integration and GitHub CI/CD workflows.",
+    "descFr": "Al-Moftah · Interfaces web, logique applicative et données métier avec exploration immobilière interactive, intégration Cloud et workflows GitHub CI/CD.",
+    "img": "keyone-tour.webp",
+    "signal": "React / TypeScript / CI/CD"
+  },
+  {
+    "id": "benchmark",
+    "title": "REST benchmark",
+    "label": "07 / Backend · Performance engineering",
+    "labelFr": "07 / Backend · Ingénierie de performance",
+    "desc": "A benchmark harness comparing REST stacks through latency, throughput and resource use, with the source available to inspect.",
+    "descFr": "Un banc de test comparant les stacks REST selon la latence, le débit et les ressources utilisées, avec code source consultable.",
+    "img": null,
+    "signal": "Latency / Throughput / Resources"
+  },
+  {
+    "id": "keytwo",
+    "title": "KEY TWO",
+    "label": "08 / Interactive web · 3D interfaces",
+    "labelFr": "08 / Web interactif · Interfaces 3D",
+    "desc": "A property application with virtual tours, unit information and an interactive floor explorer. Includes footage of the actual application.",
+    "descFr": "Une application immobilière avec visites virtuelles, informations sur les unités et explorateur des étages. Avec vidéo de l’application réelle.",
+    "img": "keytwo-floor.webp",
+    "signal": "Web / Floor explorer / Tours"
+  }
+]

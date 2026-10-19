@@ -1,0 +1,102 @@
+[
+  {
+    "asset": "keyone-tour.webp",
+    "source": "Presentation KEYONE.mp4",
+    "time_seconds": 253.7
+  },
+  {
+    "asset": "keyone-aerial.webp",
+    "source": "Presentation KEYONE.mp4",
+    "time_seconds": 55.8
+  },
+  {
+    "asset": "keyone-interior.webp",
+    "source": "Presentation KEYONE.mp4",
+    "time_seconds": 223
+  },
+  {
+    "asset": "keytwo-floor.webp",
+    "source": "KEYTWO.mp4",
+    "time_seconds": 228.5
+  },
+  {
+    "asset": "keytwo-tour.webp",
+    "source": "KEYTWO.mp4",
+    "time_seconds": 50.2
+  },
+  {
+    "asset": "keytwo-unit.webp",
+    "source": "KEYTWO.mp4",
+    "time_seconds": 160.7
+  },
+  {
+    "asset": "vr-walkthrough.webp",
+    "source": "WhatsApp Video 2025-06-19 at 18.10.07.mp4",
+    "time_seconds": 230.5
+  },
+  {
+    "asset": "vr-controls.webp",
+    "source": "WhatsApp Video 2025-06-19 at 18.10.07.mp4",
+    "time_seconds": 138.3
+  },
+  {
+    "asset": "idc-environment.webp",
+    "source": "Projet Idc_c.mp4",
+    "time_seconds": 226.1
+  },
+  {
+    "asset": "idc-interaction.webp",
+    "source": "Projet Idc_c.mp4",
+    "time_seconds": 282.6
+  },
+  {
+    "asset": "pfe-building.webp",
+    "source": "2fallback.PNG"
+  },
+  {
+    "asset": "pfe-hall.webp",
+    "source": "modeling (6).png"
+  },
+  {
+    "asset": "pfe-texturing.webp",
+    "source": "TEXTURING (1).png"
+  },
+  {
+    "asset": "pfe-model.webp",
+    "source": "modeling (5).png"
+  },
+  {
+    "asset": "pfe-unity.webp",
+    "source": "unity-setup (4).png"
+  },
+  {
+    "asset": "pfe-uv.webp",
+    "source": "UV-unwrapping (2).png"
+  },
+  {
+    "asset": "pfe-materials.webp",
+    "source": "TEXTURING (3).png"
+  },
+  {
+    "asset": "lidar-capture.webp",
+    "source": "lidarscan (2).jpeg"
+  },
+  {
+    "asset": "graduation.webp",
+    "source": "f9a421d8-5fe6-45b5-8d77-dfe532c1fbff (1).jpg"
+  },
+  {
+    "asset": "keyone-preview.mp4",
+    "source": "Presentation KEYONE.mp4",
+    "start_seconds": 245,
+    "duration_seconds": 13,
+    "audio": "removed"
+  },
+  {
+    "asset": "keytwo-preview.mp4",
+    "source": "KEYTWO.mp4",
+    "start_seconds": 221,
+    "duration_seconds": 14,
+    "audio": "removed"
+  }
+]
