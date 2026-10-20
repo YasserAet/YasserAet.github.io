@@ -9,3 +9,10 @@
 @media(max-width:767px){.tech-overview{grid-template-columns:1fr;gap:24px;margin-bottom:35px}.tech-overview-group{padding-top:16px}.tech-overview-group>p{margin-bottom:12px}.tech-overview-group li{font-size:13px;padding:6px 10px}.hero-tech-list{gap:8px 12px}.hero-tech-list>li{font-size:10px}.hero-tech-list>li:not(:last-child):after{margin-left:12px}#ecosystem .ecosystem-link{padding:22px 4px;gap:12px;grid-template-columns:22px minmax(0,1fr)}.ecosystem-link .text-xl{font-size:18px}.ecosystem-link .mt-2{font-size:14px}.ecosystem-arrow{width:30px;height:30px}}
 @media(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.ecosystem-target{display:none!important}#ecosystem[data-target-cursor=active],#ecosystem[data-target-cursor=active] *{cursor:auto!important}}
 @media(prefers-reduced-motion:reduce){.ecosystem-arrow>svg,.ecosystem-target,.ecosystem-link{transition:none!important}}
+
+/* Market-relevant highlights stay compact; the full stack is grouped below. */
+#hero .hero-tech-list{gap:8px;align-items:center}
+#hero .hero-tech-list>li{padding:5px 10px;border:1px solid color-mix(in srgb,var(--palette-sky) 22%,transparent);border-radius:5px;font-size:11px;line-height:1.6;letter-spacing:0}
+#hero .hero-tech-list>li:after{display:none}
+.hero-tech-more{display:inline-flex;align-items:center;min-height:32px;margin-top:10px;font-size:11px;color:var(--palette-sky)}
+.hero-tech-more:hover{text-decoration:underline;text-underline-offset:4px}

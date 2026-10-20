@@ -9,9 +9,9 @@
   {
     "title": "Java & object-oriented engineering",
     "titleFr": "Java & ingénierie orientée objet",
-    "tools": "Java / OOP / Spring Cloud / Microservices",
-    "desc": "Object-oriented software design, Java development and Spring Cloud microservices.",
-    "descFr": "Conception logicielle orientée objet, développement Java et microservices Spring Cloud."
+    "tools": "Java / OOP / Spring Boot / Spring Cloud / Microservices",
+    "desc": "Object-oriented software design and Spring Boot / Spring Cloud microservices, supported by Java and microservices training.",
+    "descFr": "Conception logicielle orientée objet et microservices Spring Boot / Spring Cloud, appuyés par les formations Java et microservices."
   },
   {
     "title": "Languages & core",
@@ -30,7 +30,7 @@
   {
     "title": "Backend frameworks",
     "titleFr": "Frameworks backend",
-    "tools": "Spring Cloud / FastAPI / Node.js / Express / Django / Laravel",
+    "tools": "Spring Boot / Spring Cloud / FastAPI / Node.js / Express / Django / Laravel",
     "desc": "Application logic, modular services and data-backed web systems.",
     "descFr": "Logique applicative, services modulaires et systèmes web reliés aux données."
   },
@@ -58,7 +58,7 @@
   {
     "title": "DevOps, containers & delivery",
     "titleFr": "DevOps, conteneurs & livraison",
-    "tools": "Docker / Docker Compose / Kubernetes / OpenShift / Git / GitHub CI/CD / Linux",
+    "tools": "Docker / Docker Compose / Kubernetes / OpenShift / Git / GitHub Actions / CI/CD / Linux",
     "desc": "Container tooling, reproducible environments, build pipelines and application deployment.",
     "descFr": "Outils de conteneurisation, environnements reproductibles, pipelines de build et déploiement applicatif."
   },
@@ -79,7 +79,7 @@
   {
     "title": "Education & technical training",
     "titleFr": "Formation & apprentissage technique",
-    "tools": "EMSI MIAGE / UM6P VR Innovation Academy / Java & OOP / Spring Cloud / Docker / Kubernetes / OpenShift",
+    "tools": "EMSI MIAGE / UM6P VR Innovation Academy / Java & OOP / Spring Boot / Spring Cloud / Docker / Kubernetes / OpenShift / Azure networking / GCP fundamentals",
     "desc": "Software engineering, Java, cloud-native containers and immersive-development training.",
     "descFr": "Formation en ingénierie logicielle, Java, conteneurs cloud native et développement immersif."
   }

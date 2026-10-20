@@ -2,6 +2,7 @@ from pathlib import Path
 from lxml import html,etree
 import copy,json,re
 source=Path(__file__).resolve().parents[1]/'design-reference'
+technologies=json.loads(Path('lib/technology-keywords.json').read_text())
 r=html.parse(str(source/'index.html'));body=r.xpath('//body')[0]
 for el in body.xpath('.//script|.//link|.//style'):
  if el.tag=='style':continue
@@ -88,13 +89,15 @@ for band in hero.xpath('.//div[@aria-hidden="true"][.//div[contains(@class,"para
  band.set('class','hero-tech-wrap');band.attrib.pop('aria-hidden',None)
  for child in list(band):band.remove(child)
  techlist=etree.SubElement(band,'ul',{'class':'hero-tech-list','aria-label':'Core technologies'})
- for name in ['Java','Spring Cloud','Python','React','TypeScript','Docker','Kubernetes']:put(etree.SubElement(techlist,'li'),name)
+ for name in technologies['hero']:put(etree.SubElement(techlist,'li'),name)
+ see_all=etree.SubElement(band,'a',{'href':'#ecosystem','class':'hero-tech-more'});put(see_all,'Explore the full technology stack ↗','Voir toutes les technologies ↗')
 for hidden_tech in hero.xpath('.//ul[contains(@class,"sr-only")]'):hidden_tech.drop_tree()
 # Statement section and honest summary values.
 who=byid('who');paragraph=who.xpath('.//div[contains(@class,"max-w-6xl")]/p')[0]
 en='I’m Yassir, an AI and software engineer based in Marrakech. I connect computer vision and data processing to APIs, live interfaces and interactive systems. My work spans AI-powered applications, full-stack development, distributed backends and deployment — with hands-on projects in body tracking, smart parking and digital twins, and document-intelligence explorations.'
 fr='Je suis Yassir, ingénieur IA et logiciel basé à Marrakech. Je relie vision par ordinateur et traitement de données aux APIs, interfaces temps réel et systèmes interactifs. Mon travail couvre les applications intégrant l’IA, le full stack, les backends distribués et le déploiement : suivi corporel, parking intelligent, jumeaux numériques et explorations d’intelligence documentaire.'
-put(paragraph,en,fr)
+put(paragraph,'I’m Yassir, an AI and software engineer based in Marrakech. I connect computer vision, backend services and live interfaces to build useful applications.','Je suis Yassir, ingénieur IA et logiciel à Marrakech. Je relie vision par ordinateur, services backend et interfaces temps réel pour créer des applications utiles.');paragraph.set('class','profile-statement')
+profile_detail=etree.SubElement(paragraph.getparent(),'p',{'class':'profile-detail'});put(profile_detail,'My work spans full-stack development, distributed systems and deployment, with hands-on projects in body tracking, smart parking, digital twins and document intelligence.','Mon travail couvre le développement full stack, les systèmes distribués et le déploiement, avec des projets de suivi corporel, de parking intelligent, de jumeaux numériques et d’intelligence documentaire.')
 for el,(label,labelFr,value) in zip(who.xpath('.//dl/div'),[('Engineering degree','Diplôme d’ingénieur','2026'),('Professional experiences','Expériences professionnelles','4'),('Focus areas','Domaines d’expertise','4'),('VR developer diploma','Diplôme de développeur VR','2023')]):put(el.find('dt'),label,labelFr);put(el.find('dd'),value)
 # Capabilities retain sticky index, long-form descriptions and native details.
 capabilities=[
@@ -157,7 +160,8 @@ for el in eco.iter():
 for band in eco.xpath('./div[@aria-hidden="true"]'):
  band.set('class','container-x tech-overview');band.attrib.pop('aria-hidden',None)
  for child in list(band):band.remove(child)
- for title,titleFr,names in [('Core engineering','Ingénierie logicielle',['Java','Spring Cloud','Python','TypeScript','SQL']),('Interfaces & APIs','Interfaces & APIs',['React','Next.js','Vue.js','Node.js','FastAPI']),('Data & delivery','Données & livraison',['PostgreSQL','Redis','Docker','Kubernetes','GitHub CI/CD'])]:
+ for category in technologies['groups']:
+  title,titleFr,names=category['title'],category['titleFr'],category['keywords']
   group=etree.SubElement(band,'div',{'class':'tech-overview-group'});put(etree.SubElement(group,'p'),title,titleFr)
   techlist=etree.SubElement(group,'ul')
   for name in names:put(etree.SubElement(techlist,'li'),name)
@@ -305,18 +309,11 @@ hero_content[0].set('class',hero_content[0].get('class','')+' hero-meta')
 intro=hero_content[1].xpath('./div')[0];intro.set('class',intro.get('class','')+' hero-intro-grid')
 intro[0].set('class',intro[0].get('class','')+' hero-summary')
 intro[1].set('class',intro[1].get('class','')+' hero-actions')
-# Short mobile previews keep all capability items available on demand.
-for idx,article in enumerate(what.xpath('.//article')):
- offerings_list=article.xpath('./ul')[0];offerings_list.set('id','build-offerings-'+str(idx+1))
- button=etree.Element('button',{'type':'button','class':'capability-more','data-capability-more':'','aria-expanded':'false','aria-controls':offerings_list.get('id')})
- put(etree.SubElement(button,'span',{'class':'capability-more-open'}),'Show all '+str(len(offerings_list))+' capabilities +','Voir les '+str(len(offerings_list))+' compétences +')
- put(etree.SubElement(button,'span',{'class':'capability-more-close'}),'Show fewer −','Réduire −')
- offerings_list.addnext(button)
-# Compact navigation uses clear labels instead of display-sized numbered links.
-for link in body.xpath('.//a[contains(@class,"sm-panel-item")]'):
- link.attrib.pop('data-index',None)
-for navlist in body.xpath('.//ul[contains(@class,"sm-panel-list")]'):navlist.set('data-numbering','false')
-
+# Mobile is rendered with a dedicated React layout; remove the captured menu entirely.
+for old_mobile in body.xpath('.//div[contains(concat(" ",@class," ")," sm-scope ")]'):old_mobile.drop_tree()
+for shell in body.xpath('.//*[contains(concat(" ",@class," ")," portfolio-nav-shell ")]'):
+ shell.tag='header';shell.set('class','portfolio-nav-shell')
+for band in hero.xpath('.//div[contains(@class,"hero-tech-wrap")]'):band.set('class','hero-tech-wrap container-x')
 # Remove dangling Next metadata placeholders; all original inline styles remain available.
 markup=''.join(etree.tostring(c,encoding='unicode',method='html') for c in body)
 assert '<script' not in markup

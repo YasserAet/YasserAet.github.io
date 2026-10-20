@@ -1,0 +1,140 @@
+{
+  "hero": [
+    "Java",
+    "Spring Boot",
+    "Spring Cloud",
+    "Python",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "FastAPI",
+    "PHP",
+    "Laravel",
+    "SQL",
+    "PostgreSQL",
+    "MySQL",
+    "REST APIs",
+    "Docker",
+    "Kubernetes",
+    "Git",
+    "CI/CD",
+    "Linux",
+    "Kafka",
+    "Computer vision",
+    "RAG"
+  ],
+  "mobileHighlights": [
+    "Java",
+    "Spring Boot",
+    "React",
+    "TypeScript",
+    "Python",
+    "Node.js",
+    "SQL",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "FastAPI",
+    "RAG"
+  ],
+  "groups": [
+    {
+      "id": "backend",
+      "title": "Backend & Java",
+      "titleFr": "Backend & Java",
+      "keywords": [
+        "Java",
+        "Spring Boot",
+        "Spring Cloud",
+        "Python",
+        "Node.js",
+        "FastAPI",
+        "PHP",
+        "Laravel"
+      ],
+      "description": "Java and Python services, microservices and full-stack application backends.",
+      "descriptionFr": "Services Java et Python, microservices et backends d’applications full stack."
+    },
+    {
+      "id": "frontend",
+      "title": "Frontend & web",
+      "titleFr": "Frontend & web",
+      "keywords": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Next.js",
+        "Vue.js",
+        "HTML / CSS",
+        "Tailwind CSS"
+      ],
+      "description": "Responsive interfaces, dashboards and connected web applications.",
+      "descriptionFr": "Interfaces responsive, dashboards et applications web connectées."
+    },
+    {
+      "id": "data",
+      "title": "Data & APIs",
+      "titleFr": "Données & APIs",
+      "keywords": [
+        "REST APIs",
+        "GraphQL",
+        "SQL",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Kafka"
+      ],
+      "description": "Relational and document data, caching, APIs and asynchronous messaging.",
+      "descriptionFr": "Données relationnelles et documents, cache, APIs et messagerie asynchrone."
+    },
+    {
+      "id": "devops",
+      "title": "DevOps & delivery",
+      "titleFr": "DevOps & déploiement",
+      "keywords": [
+        "Docker",
+        "Docker Compose",
+        "Kubernetes",
+        "OpenShift",
+        "Git",
+        "GitHub Actions",
+        "CI/CD",
+        "Linux"
+      ],
+      "description": "Reproducible environments, version control, build pipelines and delivery.",
+      "descriptionFr": "Environnements reproductibles, gestion de versions, pipelines de build et livraison."
+    },
+    {
+      "id": "ai",
+      "title": "Applied AI",
+      "titleFr": "IA appliquée",
+      "keywords": [
+        "Computer vision",
+        "OpenCV",
+        "MediaPipe",
+        "RAG",
+        "Embeddings",
+        "Vector databases",
+        "ChromaDB"
+      ],
+      "description": "Computer-vision integration and document-intelligence exploration.",
+      "descriptionFr": "Intégration de la vision par ordinateur et exploration de l’intelligence documentaire."
+    },
+    {
+      "id": "cloud",
+      "title": "Cloud & quality",
+      "titleFr": "Cloud & qualité",
+      "keywords": [
+        "Azure networking",
+        "GCP fundamentals",
+        "Postman",
+        "API testing",
+        "Logging",
+        "Monitoring"
+      ],
+      "description": "Azure networking and GCP foundations from training, alongside API validation, logs and monitoring.",
+      "descriptionFr": "Bases des réseaux Azure et de GCP acquises en formation, validation des APIs, logs et supervision."
+    }
+  ]
+}
