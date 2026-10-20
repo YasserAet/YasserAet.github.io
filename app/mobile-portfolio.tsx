@@ -33,7 +33,7 @@ export default function MobilePortfolio({lang,onLanguage,onProject}:Props){
   const breakpoint=window.matchMedia('(min-width:1024px)');
   function resize(){if(breakpoint.matches)setMenuOpen(false)}
   // Existing external fragment links also reach the corresponding mobile content.
-  function hash(){if(breakpoint.matches)return;const map:Record<string,string>={hero:'m-home',work:'m-work',who:'m-about',what:'m-build',ecosystem:'m-skills',experience:'m-experience','full-timeline':'m-experience',resume:'m-resume','contact-cta':'m-contact',archive:'m-archive'};const target=map[location.hash.slice(1)];if(target){const el=document.getElementById(target);if(el instanceof HTMLDetailsElement)el.open=true;el?.scrollIntoView({block:'start',behavior:'instant'})}}
+  function hash(){if(breakpoint.matches)return;const map:Record<string,string>={hero:'m-home',work:'m-work',who:'m-about',what:'m-build',ecosystem:'m-skills',experience:'m-experience','full-timeline':'m-experience',resume:'m-resume','contact-cta':'m-contact',archive:'m-archive'};const target=map[location.hash.slice(1)];if(target){const el=document.getElementById(target);if(el instanceof HTMLDetailsElement)el.open=true;el?.scrollIntoView({block:'start',behavior:'auto'})}}
   breakpoint.addEventListener('change',resize);window.addEventListener('hashchange',hash);hash();
   return()=>{breakpoint.removeEventListener('change',resize);window.removeEventListener('hashchange',hash)};
  },[]);
@@ -51,7 +51,7 @@ export default function MobilePortfolio({lang,onLanguage,onProject}:Props){
  </details>}
  return <div className="mobile-portfolio">
   <a className="mp-skip" href="#m-main">{text('Skip to content','Aller au contenu')}</a>
-  <header className="mp-header" ref={header} onBlur={e=>{if(!e.currentTarget.contains(e.relatedTarget))setMenuOpen(false)}}>
+  <header className="mp-header" ref={header}>
    <div className="mp-header-inner"><a className="mp-brand" href="#m-home" onClick={()=>setMenuOpen(false)}>Yassir Aitali</a>
     <div className="mp-header-actions"><button className="mp-language" type="button" onClick={()=>onLanguage(fr?'en':'fr')} aria-label={fr?'Switch to English':'Passer en français'}>{fr?'EN':'FR'}</button>
      <button className="mp-menu-toggle" ref={toggle} type="button" aria-expanded={menuOpen} aria-controls="mp-navigation" aria-label={menuOpen?text('Close navigation','Fermer la navigation'):text('Open navigation','Ouvrir la navigation')} onClick={()=>setMenuOpen(open=>!open)}><span>{menuOpen?text('Close','Fermer'):'Menu'}</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">{menuOpen?<path d="m6 6 12 12M6 18 18 6"/>:<path d="M4 8h16M4 16h16"/>}</svg></button>

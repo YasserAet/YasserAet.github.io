@@ -5,6 +5,7 @@ import {galleries} from '@/lib/project-galleries';
 import {installReferenceHover} from '@/lib/reference-hover';
 import {installEcosystemCursor} from '@/lib/ecosystem-cursor';
 import MobilePortfolio from './mobile-portfolio';
+import {setProjectDialogOpen} from '@/lib/project-dialog';
 function refreshLocalTime(host:HTMLElement){
  const fr=document.documentElement.lang==='fr';
  const now=new Intl.DateTimeFormat(fr?'fr-FR':'en-GB',{timeZone:'Africa/Casablanca',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date());
@@ -20,14 +21,14 @@ export default function Portfolio(){
  const sections=Array.from(host.querySelectorAll<HTMLElement>('[data-section][id]'));
  function activate(index:number){const id=sections[index]?.id;host.querySelectorAll('nav[aria-label="Primary"] a').forEach(a=>{if(a.getAttribute('href')==='#'+id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});}
  const sectionObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)activate(sections.indexOf(entry.target as HTMLElement))})},{rootMargin:'-15% 0px -65% 0px'});sections.forEach(s=>sectionObserver.observe(s));activate(0);
- function scrollToId(id:string){host.querySelector('#'+CSS.escape(id))?.scrollIntoView({behavior:reduced?'instant':'smooth',block:'start'})}
+ function scrollToId(id:string){host.querySelector('#'+CSS.escape(id))?.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'})}
  const disposeHover=installReferenceHover(host);const disposeEcosystem=installEcosystemCursor(host);
  function click(event:MouseEvent){const target=(event.target as Element).closest<HTMLElement>('a,button');if(!target)return;
  if(target.dataset.project){event.preventDefault();previousFocus.current=target;setSelected(target.dataset.project);history.pushState(null,'','#project-'+target.dataset.project);return}
  if(target.hasAttribute('data-back-top')){event.preventDefault();scrollToId('hero');return}
  const href=target.getAttribute('href');if(href?.startsWith('#')){const el=host.querySelector(href);if(el?.tagName==='DETAILS')(el as HTMLDetailsElement).open=true;}
  }
- function syncHash(){const id=location.hash.replace('#project-','');if(location.hash.startsWith('#project-')&&galleries.some(g=>g.id===id))setSelected(id);else{setSelected(null);if(location.hash==='#full-timeline'){const timeline=host.querySelector<HTMLDetailsElement>('#full-timeline');if(timeline){timeline.open=true;timeline.scrollIntoView({block:'start',behavior:'instant'})}}}}
+ function syncHash(){const id=location.hash.replace('#project-','');if(location.hash.startsWith('#project-')&&galleries.some(g=>g.id===id))setSelected(id);else{setSelected(null);if(location.hash==='#full-timeline'){const timeline=host.querySelector<HTMLDetailsElement>('#full-timeline');if(timeline){timeline.open=true;timeline.scrollIntoView({block:'start',behavior:'auto'})}}}}
  const caps=Array.from(host.querySelectorAll<HTMLElement>('[data-capability]'));
  function scrollEffects(){frame=0;navShells.forEach(shell=>shell.classList.toggle('is-scrolled',window.scrollY>16));let current=0;caps.forEach((cap,i)=>{if(cap.getBoundingClientRect().top<innerHeight*.52)current=i;cap.dataset.active=String(i===current)});caps.forEach((cap,i)=>cap.dataset.active=String(i===current));const index=host.querySelector<HTMLElement>('[data-capability-index]');if(index){index.dataset.active=String(current);index.querySelectorAll<HTMLElement>(':scope > .relative > span').forEach((span,i)=>{if(i<caps.length){span.style.opacity=i===current?'1':'0';span.style.transform=i===current?'translateY(0)':'translateY(25px)'}});index.querySelectorAll('li').forEach((li,i)=>li.classList.toggle('cap-current',i===current))}const process=host.querySelector('#process');if(process){const bounds=process.getBoundingClientRect();const progress=Math.max(0,Math.min(1,(innerHeight-bounds.top)/(innerHeight+bounds.height*.25)));process.querySelectorAll<HTMLElement>('[style*="width:0"], [style*="width: 0"]').forEach(el=>el.style.width=progress*100+'%');process.querySelectorAll<HTMLElement>('[style*="height:0"], [style*="height: 0"]').forEach(el=>el.style.height=progress*100+'%');}}
  const onScroll=()=>{if(!frame)frame=requestAnimationFrame(scrollEffects)};
@@ -37,7 +38,24 @@ export default function Portfolio(){
  return()=>{disposeHover();disposeEcosystem();sectionObserver.disconnect();clearInterval(timer);if(frame)cancelAnimationFrame(frame);host.removeEventListener('click',click);window.removeEventListener('scroll',onScroll);window.removeEventListener('resize',resize);window.removeEventListener('popstate',syncHash);window.removeEventListener('hashchange',syncHash);document.body.style.overflow=''}
  },[]);
  useEffect(()=>{document.documentElement.lang=lang;if(root.current)refreshLocalTime(root.current);root.current?.querySelectorAll<HTMLElement>('[data-en][data-fr]').forEach(el=>{el.textContent=(fr?el.dataset.fr:el.dataset.en)??''});root.current?.querySelectorAll<HTMLElement>('[data-en-label]').forEach(el=>{const span=el.querySelector('span');if(span)span.nextSibling?span.nextSibling.textContent=(fr?el.dataset.frLabel:el.dataset.enLabel)??'':span.after((fr?el.dataset.frLabel:el.dataset.enLabel)??'')})},[lang]);
- useEffect(()=>{if(selected){dialog.current?.showModal();document.body.style.overflow='hidden'}else{dialog.current?.close();document.body.style.overflow='';previousFocus.current?.focus()}},[selected]);
+ useEffect(()=>{
+ const el=dialog.current;if(!el)return;
+ const mode=setProjectDialogOpen(el,Boolean(selected));
+ if(selected){document.body.style.overflow='hidden';if(mode==='fallback')el.querySelector<HTMLButtonElement>('button')?.focus()}
+ else{document.body.style.overflow='';previousFocus.current?.focus()}
+ function escape(event:KeyboardEvent){
+  if(mode!=='fallback')return;
+  if(event.key==='Escape'){event.preventDefault();setSelected(null);if(location.hash.startsWith('#project-'))history.replaceState(null,'','#work')}
+  if(event.key==='Tab'){
+   const links=Array.from(el?.querySelectorAll<HTMLElement>('button:not([disabled]),a[href],video[controls]')??[]);
+   const first=links[0],last=links[links.length-1];
+   if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus()}
+   else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus()}
+  }
+ }
+ if(selected)document.addEventListener('keydown',escape);
+ return()=>document.removeEventListener('keydown',escape);
+ },[selected]);
  function close(){setSelected(null);if(location.hash.startsWith('#project-'))history.replaceState(null,'','#work')}
  return <><div className="reference-page desktop-portfolio" ref={root} dangerouslySetInnerHTML={{__html:markup}}/><MobilePortfolio lang={lang} onLanguage={setLang} onProject={(id,trigger)=>{previousFocus.current=trigger;setSelected(id);history.pushState(null,'','#project-'+id)}}/><div className="language-control" aria-label="Language"><button onClick={()=>setLang('en')} aria-pressed={!fr}>EN</button><span>/</span><button onClick={()=>setLang('fr')} aria-pressed={fr}>FR</button></div><dialog className="case-dialog" ref={dialog} onCancel={close} onClose={close}>{project&&<article className="case-study"><div className="case-top"><span>{fr?'Projets sélectionnés':'Selected work'} / {project.title}</span><button onClick={close} autoFocus aria-label={fr?'Fermer le projet':'Close project'}>{fr?'Fermer':'Close'} <span aria-hidden="true">×</span></button></div><div className="container-x case-content"><p className="eyebrow mb-6">{project.type}</p><h2 className="display-h1">{project.title}</h2><p className="case-summary">{fr?project.summaryFr:project.summary}</p><div className="case-tags">{project.stack.map(s=><span key={s}>{s}</span>)}</div>{project.pipeline&&<section className="case-pipeline" aria-label={fr?'Vue du système':'System overview'}>{(fr?project.pipelineFr??project.pipeline:project.pipeline).map((step,i)=><div key={step}><span>{String(i+1).padStart(2,'0')}</span><p>{step}</p></div>)}</section>}{project.contributions&&<section className="case-contributions"><h3 className="display-h3">{project.id==='rag'?(fr?'Axes techniques':'Technical focus'):(fr?'Mes contributions':'What I built & delivered')}</h3><ul>{(fr?project.contributionsFr??project.contributions:project.contributions).map(item=><li key={item}>{item}</li>)}</ul></section>}<div className="case-gallery">{project.images.map((im,i)=><figure key={im.src} className={i===0?'gallery-cover':''}><a href={im.src} target="_blank" rel="noopener noreferrer" aria-label={(fr?'Ouvrir : ':'Open image: ')+(fr?im.captionFr:im.caption)}><img src={im.src} alt={fr?im.captionFr:im.caption} width="1600" height="900" loading={i===0?'eager':'lazy'}/></a><figcaption><span>0{i+1}</span>{fr?im.captionFr:im.caption}</figcaption></figure>)}</div>{project.video&&<div className="case-video"><h3 className="display-h3">{fr?'L’application en action':'The application in motion'}</h3><video controls preload="none" playsInline poster={project.images[0].src}><source src={project.video} type="video/mp4"/></video><p>{fr?'Extrait de la démonstration fournie.':'Excerpt from the supplied application demonstration.'}</p></div>}<div className="case-bottom">{project.repo&&<a href={project.repo} target="_blank" rel="noopener noreferrer">{fr?'Voir le dépôt':'View repository'} ↗</a>}<a href={'mailto:yasseraitali@outlook.fr?subject='+encodeURIComponent(project.title)}>{fr?'Échanger sur ce projet':'Discuss this project'} ↗</a><button onClick={close}>{fr?'Retour aux projets':'Back to selected work'} ↑</button></div></div></article>}</dialog></>;
 }
