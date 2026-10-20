@@ -72,8 +72,8 @@ put(hero.xpath('.//p')[2],'AI & Software Engineer','Ingénieur IA & logiciel')
 hero.xpath('.//p')[2].set('class',hero.xpath('.//p')[2].get('class','')+' hero-role')
 role=hero.xpath('.//p')[2];role_en=role.attrib.pop('data-en');role_fr=role.attrib.pop('data-fr');role.text=None
 put(etree.SubElement(role,'span'),role_en,role_fr)
-put(etree.SubElement(role,'span',{'class':'hero-domains'}),'Java · AI applications · Full stack · DevOps','Java · Applications IA · Full stack · DevOps')
-put(hero.xpath('.//p')[3],'I turn AI capabilities into interactive applications — computer-vision pipelines, live dashboards and connected software. My work brings Java, Python and AI together with full-stack engineering, distributed backends and DevOps, from live computer vision to document-intelligence explorations.','Je transforme les capacités de l’IA en applications interactives — pipelines de vision, dashboards temps réel et logiciels connectés. Mon travail associe Java, Python et IA, ingénierie full stack, backends distribués et DevOps, de la vision temps réel aux explorations d’intelligence documentaire.')
+put(etree.SubElement(role,'span',{'class':'hero-domains'}),'AI engineering · Full-stack development · DevOps','Ingénierie IA · Développement full stack · DevOps')
+put(hero.xpath('.//p')[3],'I build AI-powered applications, connected backends and interactive experiences — from computer vision and real-time dashboards to digital twins.','Je développe des applications intégrant l’IA, des backends connectés et des expériences interactives — de la vision par ordinateur aux dashboards temps réel et aux jumeaux numériques.')
 # Replace technology badges and marquee text without changing their structure.
 techmap={'React.js':'React','Redux Toolkit':'Java / Spring Cloud','ASP.NET':'Python','Express.js':'FastAPI','Stripe':'OpenCV / MediaPipe','Figma':'Docker / Kubernetes'}
 for el in hero.iter():
@@ -241,7 +241,7 @@ for el,label,value in zip(blocks,['Profile','Engineering degree','Based in'],['A
 # Why me retains four open editorial blocks, with evidence-based copy.
 whys=[('Systems perspective','From data pipelines and APIs to the screen or 3D environment, I understand how the parts connect.'),('Delivery matters','I connect development with Git workflows, Linux deployment, cloud integration and reproducible Docker environments.'),('Hands-on across the stack','Java / OOP, Spring Cloud, Python / FastAPI, React / TypeScript and real-time application integration.'),('AI connected to software','Body tracking and smart parking connect computer vision to live applications; document intelligence / RAG is my current AI exploration.')]
 for el,(title,desc) in zip(byid('why').xpath('.//dl/div'),whys):
- dt=el.find('dt');num=copy.deepcopy(dt[0]);put(dt,title);dt.insert(0,num);put(el.find('dd'),desc)
+ dt=el.find('dt');num=copy.deepcopy(dt[0]);num.tail=None;put(dt,title);dt.insert(0,num);put(el.find('dd'),desc)
 # Footer and original navigation text.
 footer=one('.//footer');footer.set('id','footer');footer.set('data-section','Footer')
 for btn in footer.xpath('.//button'):btn.set('data-back-top','')
@@ -296,6 +296,27 @@ for el in body.xpath('.//*[@data-en][*]'):
  for child in el:child.tail=None
  el.attrib.pop('data-en',None);el.attrib.pop('data-fr',None)
  label=etree.SubElement(el,'span');put(label,en,fr)
+# Keep the introduction focused; remove the availability announcement everywhere.
+for announcement in body.xpath('.//p[contains(string(.),"Open to AI engineering") or contains(string(.),"Open to conversations about React")]'):
+ announcement.drop_tree()
+hero_content=hero.xpath('./div[contains(@class,"container-x")]')[0]
+hero_content.set('class',hero_content.get('class','')+' hero-content')
+hero_content[0].set('class',hero_content[0].get('class','')+' hero-meta')
+intro=hero_content[1].xpath('./div')[0];intro.set('class',intro.get('class','')+' hero-intro-grid')
+intro[0].set('class',intro[0].get('class','')+' hero-summary')
+intro[1].set('class',intro[1].get('class','')+' hero-actions')
+# Short mobile previews keep all capability items available on demand.
+for idx,article in enumerate(what.xpath('.//article')):
+ offerings_list=article.xpath('./ul')[0];offerings_list.set('id','build-offerings-'+str(idx+1))
+ button=etree.Element('button',{'type':'button','class':'capability-more','data-capability-more':'','aria-expanded':'false','aria-controls':offerings_list.get('id')})
+ put(etree.SubElement(button,'span',{'class':'capability-more-open'}),'Show all '+str(len(offerings_list))+' capabilities +','Voir les '+str(len(offerings_list))+' compétences +')
+ put(etree.SubElement(button,'span',{'class':'capability-more-close'}),'Show fewer −','Réduire −')
+ offerings_list.addnext(button)
+# Compact navigation uses clear labels instead of display-sized numbered links.
+for link in body.xpath('.//a[contains(@class,"sm-panel-item")]'):
+ link.attrib.pop('data-index',None)
+for navlist in body.xpath('.//ul[contains(@class,"sm-panel-list")]'):navlist.set('data-numbering','false')
+
 # Remove dangling Next metadata placeholders; all original inline styles remain available.
 markup=''.join(etree.tostring(c,encoding='unicode',method='html') for c in body)
 assert '<script' not in markup
